@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.9993606138107417,
+  "precision": 1.0,
+  "recall": 0.9993024877935364,
+  "f1": 0.9996511222235144,
+  "macro_f1": 0.9979147330862794,
+  "weighted_f1": 0.9993617240339752,
+  "fpr": 0.0,
+  "fnr": 0.0006975122064636131,
+  "tp": 4298,
+  "fp": 0,
+  "tn": 391,
+  "fn": 3,
+  "roc_auc": 0.99996491626583,
+  "pr_auc": 0.9999966210441392,
+  "confusion_matrix": [
+    [
+      391,
+      0
+    ],
+    [
+      3,
+      4298
+    ]
+  ],
+  "training_time_sec": 0.31760454177856445,
+  "inference_time_total_sec": 0.02752208709716797,
+  "latency_per_sample_ms": 0.005865747463164529,
+  "model_size_kb": 451.1025390625,
+  "num_test_samples": 4692,
+  "model": "Random_Forest",
+  "dataset_name": "Balanced_IEC104_Train_Test_CSV_Files",
+  "task": "binary",
+  "feature_count": 76,
+  "train_samples": 9322,
+  "test_samples": 4692
+}

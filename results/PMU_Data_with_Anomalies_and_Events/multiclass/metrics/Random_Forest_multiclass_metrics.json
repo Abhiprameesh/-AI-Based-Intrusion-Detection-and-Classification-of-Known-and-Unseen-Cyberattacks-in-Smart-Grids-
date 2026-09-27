@@ -1,0 +1,123 @@
+{
+  "accuracy": 0.9670851573469893,
+  "macro_precision": 0.5397462335081621,
+  "macro_recall": 0.5030892478719808,
+  "macro_f1": 0.5154706155036525,
+  "weighted_precision": 0.9632398241254709,
+  "weighted_recall": 0.9670851573469893,
+  "weighted_f1": 0.962740255578556,
+  "per_class_metrics": {
+    "Normal": {
+      "precision": 0.9751422872987303,
+      "recall": 0.9987544218026008,
+      "f1": 0.9868071280890026
+    },
+    "Fault": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Line_Outage": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Gen_Change": {
+      "precision": 1.0,
+      "recall": 0.637713437268003,
+      "f1": 0.7787851314596554
+    },
+    "Load_Change": {
+      "precision": 0.8823104693140794,
+      "recall": 0.8913202042304887,
+      "f1": 0.8867924528301887
+    },
+    "Cyber_Drop": {
+      "precision": 0.9207708779443254,
+      "recall": 0.9938366718027735,
+      "f1": 0.955909596146721
+    },
+    "Cyber_Physical": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      20046,
+      0,
+      0,
+      0,
+      25,
+      0,
+      0
+    ],
+    [
+      23,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      20,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      311,
+      3,
+      7,
+      859,
+      138,
+      29,
+      0
+    ],
+    [
+      147,
+      2,
+      0,
+      0,
+      1222,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      0,
+      0,
+      0,
+      1290,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0,
+      82,
+      0
+    ]
+  ],
+  "training_time_sec": 3.0117292404174805,
+  "inference_time_total_sec": 0.0584564208984375,
+  "latency_per_sample_ms": 0.00241415796227131,
+  "model_size_kb": 24523.7197265625,
+  "num_test_samples": 24214,
+  "num_classes": 7,
+  "model": "Random_Forest",
+  "dataset_name": "PMU_Data_with_Anomalies_and_Events",
+  "task": "multiclass",
+  "feature_count": 14,
+  "train_samples": 112962,
+  "test_samples": 24214
+}

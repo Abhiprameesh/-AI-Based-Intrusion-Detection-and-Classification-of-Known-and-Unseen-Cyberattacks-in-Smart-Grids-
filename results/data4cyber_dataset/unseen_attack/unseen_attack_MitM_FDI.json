@@ -1,0 +1,14 @@
+{
+  "approach": "Autoencoder_Residual_Thresholding",
+  "unseen_attack_name": "MitM_FDI",
+  "threshold": 0.42760130763053894,
+  "unseen_attack_detection_rate": 0.4160493827160494,
+  "known_attack_detection_rate": 0.3165735567970205,
+  "false_positive_rate_on_normal": 0.007407407407407408,
+  "overall_accuracy": 0.4387186629526462,
+  "overall_f1": 0.5282871634802965,
+  "overall_roc_auc": 0.9820063694267517,
+  "num_normal_test": 270,
+  "num_known_test": 1074,
+  "num_unseen_test": 810
+}

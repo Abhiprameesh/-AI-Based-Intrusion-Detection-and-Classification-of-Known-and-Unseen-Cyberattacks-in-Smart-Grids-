@@ -1,0 +1,11 @@
+{
+  "dataset": "data4cyber_dataset",
+  "tuned_model": "XGBoost",
+  "best_hyperparameters": {
+    "max_depth": 8,
+    "learning_rate": 0.1,
+    "n_estimators": 150
+  },
+  "val_macro_f1": 0.9951,
+  "test_macro_f1": 0.9986
+}

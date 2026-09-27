@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.9461055587676551,
+  "precision": 0.8153333333333334,
+  "recall": 0.8855901520637219,
+  "f1": 0.8490107601527247,
+  "macro_f1": 0.908104726563732,
+  "weighted_f1": 0.9469768128359103,
+  "fpr": 0.0414030192815505,
+  "fnr": 0.11440984793627806,
+  "tp": 3669,
+  "fp": 831,
+  "tn": 19240,
+  "fn": 474,
+  "roc_auc": 0.9282882419594846,
+  "pr_auc": 0.9129704521072299,
+  "confusion_matrix": [
+    [
+      19240,
+      831
+    ],
+    [
+      474,
+      3669
+    ]
+  ],
+  "training_time_sec": 0.3887808322906494,
+  "inference_time_total_sec": 0.0010361671447753906,
+  "latency_per_sample_ms": 4.279206842220991e-05,
+  "model_size_kb": 1.2138671875,
+  "num_test_samples": 24214,
+  "model": "SVM",
+  "dataset_name": "PMU_Data_with_Anomalies_and_Events",
+  "task": "binary",
+  "feature_count": 14,
+  "train_samples": 112962,
+  "test_samples": 24214
+}

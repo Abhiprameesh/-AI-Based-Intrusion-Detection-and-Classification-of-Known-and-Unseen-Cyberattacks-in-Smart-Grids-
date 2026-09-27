@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.904227268861104,
+  "precision": 0.9122346496233736,
+  "recall": 0.957245508982036,
+  "f1": 0.9341982234689107,
+  "macro_f1": 0.8791578433808158,
+  "weighted_f1": 0.9022984914011827,
+  "fpr": 0.2257117698855298,
+  "fnr": 0.04275449101796407,
+  "tp": 7993,
+  "fp": 769,
+  "tn": 2638,
+  "fn": 357,
+  "roc_auc": 0.9555411454754126,
+  "pr_auc": 0.9805674762627924,
+  "confusion_matrix": [
+    [
+      2638,
+      769
+    ],
+    [
+      357,
+      7993
+    ]
+  ],
+  "training_time_sec": 5.978749513626099,
+  "inference_time_total_sec": 0.10829854011535645,
+  "latency_per_sample_ms": 0.009211409382951131,
+  "model_size_kb": 49235.6337890625,
+  "num_test_samples": 11757,
+  "model": "Random_Forest",
+  "dataset_name": "binaryAllNaturalPlusNormalVsAttacks",
+  "task": "binary",
+  "feature_count": 128,
+  "train_samples": 54863,
+  "test_samples": 11757
+}

@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.9940909090909091,
+  "precision": 0.9955112219451372,
+  "recall": 0.998,
+  "f1": 0.9967540574282148,
+  "macro_f1": 0.9819213325115758,
+  "weighted_f1": 0.9940571983524623,
+  "fpr": 0.045,
+  "fnr": 0.002,
+  "tp": 1996,
+  "fp": 9,
+  "tn": 191,
+  "fn": 4,
+  "roc_auc": 0.99972375,
+  "pr_auc": 0.9999715292939837,
+  "confusion_matrix": [
+    [
+      191,
+      9
+    ],
+    [
+      4,
+      1996
+    ]
+  ],
+  "training_time_sec": 0.670957088470459,
+  "inference_time_total_sec": 0.06617856025695801,
+  "latency_per_sample_ms": 0.03008116375316273,
+  "model_size_kb": 788.6025390625,
+  "num_test_samples": 2200,
+  "model": "Random_Forest",
+  "dataset_name": "CICFlowMeter_Balanced_DNP3_SCADA",
+  "task": "binary",
+  "feature_count": 77,
+  "train_samples": 4357,
+  "test_samples": 2200
+}

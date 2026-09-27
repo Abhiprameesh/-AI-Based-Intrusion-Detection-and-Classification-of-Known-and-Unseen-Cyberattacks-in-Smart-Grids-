@@ -1,0 +1,69 @@
+{
+  "accuracy": 0.9883936861652739,
+  "macro_precision": 0.9904284774970046,
+  "macro_recall": 0.9922632209323752,
+  "macro_f1": 0.9913321063464624,
+  "weighted_precision": 0.9884024455328813,
+  "weighted_recall": 0.9883936861652739,
+  "weighted_f1": 0.9883850212780789,
+  "per_class_metrics": {
+    "benign": {
+      "precision": 0.989010989010989,
+      "recall": 1.0,
+      "f1": 0.994475138121547
+    },
+    "industroyer_modbus": {
+      "precision": 0.9839108910891089,
+      "recall": 0.9888059701492538,
+      "f1": 0.9863523573200993
+    },
+    "mitm_false_data_injection": {
+      "precision": 0.9887920298879203,
+      "recall": 0.980246913580247,
+      "f1": 0.9845009299442034
+    },
+    "mqtt_price_signal_manipulation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      270,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      795,
+      9,
+      0
+    ],
+    [
+      3,
+      13,
+      794,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      270
+    ]
+  ],
+  "training_time_sec": 5.960794925689697,
+  "inference_time_total_sec": 0.0014467239379882812,
+  "latency_per_sample_ms": 0.000671645282260112,
+  "model_size_kb": 5.83984375,
+  "num_test_samples": 2154,
+  "num_classes": 4,
+  "model": "SVM",
+  "dataset_name": "data4cyber_dataset",
+  "task": "multiclass",
+  "feature_count": 150,
+  "train_samples": 10047,
+  "test_samples": 2154
+}

@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.9991474850809889,
+  "precision": 0.9995349918623576,
+  "recall": 0.9995349918623576,
+  "f1": 0.9995349918623576,
+  "macro_f1": 0.9972099511741456,
+  "weighted_f1": 0.9991474850809889,
+  "fpr": 0.005115089514066497,
+  "fnr": 0.00046500813764240875,
+  "tp": 4299,
+  "fp": 2,
+  "tn": 389,
+  "fn": 2,
+  "roc_auc": 0.9972099511741457,
+  "pr_auc": 0.9994964574167888,
+  "confusion_matrix": [
+    [
+      389,
+      2
+    ],
+    [
+      2,
+      4299
+    ]
+  ],
+  "training_time_sec": 0.10252070426940918,
+  "inference_time_total_sec": 0.0009846687316894531,
+  "latency_per_sample_ms": 0.00020986119601224492,
+  "model_size_kb": 1.6982421875,
+  "num_test_samples": 4692,
+  "model": "SVM",
+  "dataset_name": "Balanced_IEC104_Train_Test_CSV_Files",
+  "task": "binary",
+  "feature_count": 76,
+  "train_samples": 9322,
+  "test_samples": 4692
+}

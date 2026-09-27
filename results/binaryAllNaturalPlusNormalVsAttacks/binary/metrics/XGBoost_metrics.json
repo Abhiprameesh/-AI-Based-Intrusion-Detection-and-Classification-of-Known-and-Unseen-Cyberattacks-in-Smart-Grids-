@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.7812367100450796,
+  "precision": 0.7790225999613676,
+  "recall": 0.9659880239520958,
+  "f1": 0.8624893071000855,
+  "macro_f1": 0.6638849861903754,
+  "weighted_f1": 0.7473842766774638,
+  "fpr": 0.6715585559142941,
+  "fnr": 0.034011976047904194,
+  "tp": 8066,
+  "fp": 2288,
+  "tn": 1119,
+  "fn": 284,
+  "roc_auc": 0.8480451131783981,
+  "pr_auc": 0.9345673875103762,
+  "confusion_matrix": [
+    [
+      1119,
+      2288
+    ],
+    [
+      284,
+      8066
+    ]
+  ],
+  "training_time_sec": 2.2945618629455566,
+  "inference_time_total_sec": 0.010008811950683594,
+  "latency_per_sample_ms": 0.0008513066216452831,
+  "model_size_kb": 373.8603515625,
+  "num_test_samples": 11757,
+  "model": "XGBoost",
+  "dataset_name": "binaryAllNaturalPlusNormalVsAttacks",
+  "task": "binary",
+  "feature_count": 128,
+  "train_samples": 54863,
+  "test_samples": 11757
+}

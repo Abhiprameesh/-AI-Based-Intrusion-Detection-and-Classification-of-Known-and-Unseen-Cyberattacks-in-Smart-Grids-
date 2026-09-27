@@ -1,0 +1,97 @@
+# ==============================================================================
+# Python & Virtual Environment Artifacts
+# ==============================================================================
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==============================================================================
+# Jupyter & IDE Metadata
+# ==============================================================================
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ==============================================================================
+# Large Serialized Model Checkpoints (>25MB)
+# (Keep model weights out of Git to maintain lightweight repository)
+# ==============================================================================
+*.joblib
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.onnx
+*.ckpt
+*.bin
+*.weights
+*.safetensors
+results/**/models/
+models/*
+!models/.gitkeep
+
+# ==============================================================================
+# Large Raw Datasets & Network Capture PCAPs (>100MB Total)
+# (Anchored with leading slash so metric JSONs/CSVs in results/ are retained)
+# ==============================================================================
+*.pcap
+*.pcapng
+*.pcap.gz
+*.pcapng.gz
+*.state.jsonl.gz
+
+# Raw Dataset Directories in Repository Root
+/SGSMA_Competiton 2024_PMU_DATA/
+/binaryAllNaturalPlusNormalVsAttacks/
+/Balanced_IEC104_Train_Test_CSV_Files/
+/data4cyber_dataset/
+
+# Root Raw CSV Dataset files
+/CICFlowMeter_Training_Balanced.csv
+/CICFlowMeter_Testing_Balanced.csv
+
+# Large Archives & Compression
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+
+# ==============================================================================
+# Temporary and Cache Files
+# ==============================================================================
+*.log
+*.tmp
+*.bak
+*.swp
+*~

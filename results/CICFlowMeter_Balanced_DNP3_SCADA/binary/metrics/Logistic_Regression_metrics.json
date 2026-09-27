@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.8131818181818182,
+  "precision": 0.9968730456535334,
+  "recall": 0.797,
+  "f1": 0.8858016115587664,
+  "macro_f1": 0.6863464986632783,
+  "weighted_f1": 0.8495370455777685,
+  "fpr": 0.025,
+  "fnr": 0.203,
+  "tp": 1594,
+  "fp": 5,
+  "tn": 195,
+  "fn": 406,
+  "roc_auc": 0.9388175000000001,
+  "pr_auc": 0.993321886224386,
+  "confusion_matrix": [
+    [
+      195,
+      5
+    ],
+    [
+      406,
+      1594
+    ]
+  ],
+  "training_time_sec": 0.14614582061767578,
+  "inference_time_total_sec": 0.0,
+  "latency_per_sample_ms": 0.0,
+  "model_size_kb": 1.4521484375,
+  "num_test_samples": 2200,
+  "model": "Logistic_Regression",
+  "dataset_name": "CICFlowMeter_Balanced_DNP3_SCADA",
+  "task": "binary",
+  "feature_count": 77,
+  "train_samples": 4357,
+  "test_samples": 2200
+}

@@ -1,0 +1,69 @@
+{
+  "accuracy": 1.0,
+  "macro_precision": 1.0,
+  "macro_recall": 1.0,
+  "macro_f1": 1.0,
+  "weighted_precision": 1.0,
+  "weighted_recall": 1.0,
+  "weighted_f1": 1.0,
+  "per_class_metrics": {
+    "benign": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "industroyer_modbus": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "mitm_false_data_injection": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "mqtt_price_signal_manipulation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      270,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      804,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      810,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      270
+    ]
+  ],
+  "training_time_sec": 0.37598586082458496,
+  "inference_time_total_sec": 0.002000570297241211,
+  "latency_per_sample_ms": 0.0009287698687285101,
+  "model_size_kb": 3.8056640625,
+  "num_test_samples": 2154,
+  "num_classes": 4,
+  "model": "Decision_Tree",
+  "dataset_name": "data4cyber_dataset",
+  "task": "multiclass",
+  "feature_count": 150,
+  "train_samples": 10047,
+  "test_samples": 2154
+}

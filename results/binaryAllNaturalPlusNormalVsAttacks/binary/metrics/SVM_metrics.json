@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.5981968189163902,
+  "precision": 0.7868670886075949,
+  "recall": 0.5955688622754491,
+  "f1": 0.6779822767552829,
+  "macro_f1": 0.5719174160800385,
+  "weighted_f1": 0.6165103059599172,
+  "fpr": 0.3953624889932492,
+  "fnr": 0.4044311377245509,
+  "tp": 4973,
+  "fp": 1347,
+  "tn": 2060,
+  "fn": 3377,
+  "roc_auc": 0.6519009120004781,
+  "pr_auc": 0.8355261158588257,
+  "confusion_matrix": [
+    [
+      2060,
+      1347
+    ],
+    [
+      3377,
+      4973
+    ]
+  ],
+  "training_time_sec": 3.439819574356079,
+  "inference_time_total_sec": 0.003646373748779297,
+  "latency_per_sample_ms": 0.00031014491356462504,
+  "model_size_kb": 2.1044921875,
+  "num_test_samples": 11757,
+  "model": "SVM",
+  "dataset_name": "binaryAllNaturalPlusNormalVsAttacks",
+  "task": "binary",
+  "feature_count": 128,
+  "train_samples": 54863,
+  "test_samples": 11757
+}

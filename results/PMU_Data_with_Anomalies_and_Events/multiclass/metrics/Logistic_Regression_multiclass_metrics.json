@@ -1,0 +1,123 @@
+{
+  "accuracy": 0.6713058561162963,
+  "macro_precision": 0.45342959448300385,
+  "macro_recall": 0.49795275416016965,
+  "macro_f1": 0.39618006857790194,
+  "weighted_precision": 0.9333956319488992,
+  "weighted_recall": 0.6713058561162963,
+  "weighted_f1": 0.7605827791431501,
+  "per_class_metrics": {
+    "Normal": {
+      "precision": 0.9849852071005917,
+      "recall": 0.6634945941906233,
+      "f1": 0.7928909529338216
+    },
+    "Fault": {
+      "precision": 0.00487012987012987,
+      "recall": 0.2608695652173913,
+      "f1": 0.009561752988047808
+    },
+    "Line_Outage": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Gen_Change": {
+      "precision": 0.9988751406074241,
+      "recall": 0.6592427616926503,
+      "f1": 0.7942754919499105
+    },
+    "Load_Change": {
+      "precision": 0.22976453274466518,
+      "recall": 0.9110138584974471,
+      "f1": 0.36697517261642426
+    },
+    "Cyber_Drop": {
+      "precision": 0.898465171192444,
+      "recall": 0.5862865947611711,
+      "f1": 0.7095571095571096
+    },
+    "Cyber_Physical": {
+      "precision": 0.05704697986577181,
+      "recall": 0.40476190476190477,
+      "f1": 0.1
+    }
+  },
+  "confusion_matrix": [
+    [
+      13317,
+      1160,
+      1608,
+      0,
+      3986,
+      0,
+      0
+    ],
+    [
+      17,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      20,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      96,
+      14,
+      79,
+      888,
+      201,
+      39,
+      30
+    ],
+    [
+      63,
+      52,
+      7,
+      0,
+      1249,
+      0,
+      0
+    ],
+    [
+      5,
+      0,
+      0,
+      0,
+      0,
+      761,
+      532
+    ],
+    [
+      2,
+      0,
+      0,
+      1,
+      0,
+      47,
+      34
+    ]
+  ],
+  "training_time_sec": 25.77246618270874,
+  "inference_time_total_sec": 0.0037217140197753906,
+  "latency_per_sample_ms": 0.00015370091764166973,
+  "model_size_kb": 1.7021484375,
+  "num_test_samples": 24214,
+  "num_classes": 7,
+  "model": "Logistic_Regression",
+  "dataset_name": "PMU_Data_with_Anomalies_and_Events",
+  "task": "multiclass",
+  "feature_count": 14,
+  "train_samples": 112962,
+  "test_samples": 24214
+}

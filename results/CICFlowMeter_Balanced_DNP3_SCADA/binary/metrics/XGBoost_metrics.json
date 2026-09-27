@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.9959090909090909,
+  "precision": 0.9970044932601099,
+  "recall": 0.9985,
+  "f1": 0.9977516862353235,
+  "macro_f1": 0.9875408305232033,
+  "weighted_f1": 0.9958951670149381,
+  "fpr": 0.03,
+  "fnr": 0.0015,
+  "tp": 1997,
+  "fp": 6,
+  "tn": 194,
+  "fn": 3,
+  "roc_auc": 0.9996275000000001,
+  "pr_auc": 0.9999622816971032,
+  "confusion_matrix": [
+    [
+      194,
+      6
+    ],
+    [
+      3,
+      1997
+    ]
+  ],
+  "training_time_sec": 0.8732578754425049,
+  "inference_time_total_sec": 0.005270719528198242,
+  "latency_per_sample_ms": 0.002395781603726474,
+  "model_size_kb": 148.6015625,
+  "num_test_samples": 2200,
+  "model": "XGBoost",
+  "dataset_name": "CICFlowMeter_Balanced_DNP3_SCADA",
+  "task": "binary",
+  "feature_count": 77,
+  "train_samples": 4357,
+  "test_samples": 2200
+}

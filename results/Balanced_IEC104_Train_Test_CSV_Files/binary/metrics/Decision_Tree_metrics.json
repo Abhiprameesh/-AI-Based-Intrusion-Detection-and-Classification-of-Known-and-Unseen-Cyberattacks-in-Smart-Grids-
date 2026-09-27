@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.9995737425404945,
+  "precision": 1.0,
+  "recall": 0.9995349918623576,
+  "f1": 0.9997674418604651,
+  "macro_f1": 0.9986082107261509,
+  "weighted_f1": 0.9995742366714125,
+  "fpr": 0.0,
+  "fnr": 0.00046500813764240875,
+  "tp": 4299,
+  "fp": 0,
+  "tn": 391,
+  "fn": 2,
+  "roc_auc": 0.9997674959311789,
+  "pr_auc": 0.9999612493218631,
+  "confusion_matrix": [
+    [
+      391,
+      0
+    ],
+    [
+      2,
+      4299
+    ]
+  ],
+  "training_time_sec": 0.019562244415283203,
+  "inference_time_total_sec": 0.0,
+  "latency_per_sample_ms": 0.0,
+  "model_size_kb": 1.9619140625,
+  "num_test_samples": 4692,
+  "model": "Decision_Tree",
+  "dataset_name": "Balanced_IEC104_Train_Test_CSV_Files",
+  "task": "binary",
+  "feature_count": 76,
+  "train_samples": 9322,
+  "test_samples": 4692
+}

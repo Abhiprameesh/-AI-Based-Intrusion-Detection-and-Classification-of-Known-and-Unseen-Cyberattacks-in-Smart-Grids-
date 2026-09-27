@@ -1,0 +1,1425 @@
+{
+  "binaryAllNaturalPlusNormalVsAttacks": {
+    "name": "binaryAllNaturalPlusNormalVsAttacks",
+    "path": "c:\\ALLMLPROJ\\MAINMLPROJS\\MAJOR PROJECT\\binaryAllNaturalPlusNormalVsAttacks",
+    "file_count": 15,
+    "files": [
+      "data1.csv",
+      "data10.csv",
+      "data11.csv",
+      "data12.csv",
+      "data13.csv",
+      "data14.csv",
+      "data15.csv",
+      "data2.csv",
+      "data3.csv",
+      "data4.csv",
+      "data5.csv",
+      "data6.csv",
+      "data7.csv",
+      "data8.csv",
+      "data9.csv"
+    ],
+    "total_rows": 78377,
+    "cols": 129,
+    "target": "marker",
+    "classes": {
+      "Attack": 55663,
+      "Natural": 22714
+    },
+    "nulls": "0",
+    "dupes": "8",
+    "features": [
+      "R1-PA1:VH",
+      "R1-PM1:V",
+      "R1-PA2:VH",
+      "R1-PM2:V",
+      "R1-PA3:VH",
+      "R1-PM3:V",
+      "R1-PA4:IH",
+      "R1-PM4:I",
+      "R1-PA5:IH",
+      "R1-PM5:I",
+      "R1-PA6:IH",
+      "R1-PM6:I",
+      "R1-PA7:VH",
+      "R1-PM7:V",
+      "R1-PA8:VH",
+      "R1-PM8:V",
+      "R1-PA9:VH",
+      "R1-PM9:V",
+      "R1-PA10:IH",
+      "R1-PM10:I",
+      "R1-PA11:IH",
+      "R1-PM11:I",
+      "R1-PA12:IH",
+      "R1-PM12:I",
+      "R1:F",
+      "R1:DF",
+      "R1-PA:Z",
+      "R1-PA:ZH",
+      "R1:S",
+      "R2-PA1:VH",
+      "R2-PM1:V",
+      "R2-PA2:VH",
+      "R2-PM2:V",
+      "R2-PA3:VH",
+      "R2-PM3:V",
+      "R2-PA4:IH",
+      "R2-PM4:I",
+      "R2-PA5:IH",
+      "R2-PM5:I",
+      "R2-PA6:IH",
+      "R2-PM6:I",
+      "R2-PA7:VH",
+      "R2-PM7:V",
+      "R2-PA8:VH",
+      "R2-PM8:V",
+      "R2-PA9:VH",
+      "R2-PM9:V",
+      "R2-PA10:IH",
+      "R2-PM10:I",
+      "R2-PA11:IH",
+      "R2-PM11:I",
+      "R2-PA12:IH",
+      "R2-PM12:I",
+      "R2:F",
+      "R2:DF",
+      "R2-PA:Z",
+      "R2-PA:ZH",
+      "R2:S",
+      "R3-PA1:VH",
+      "R3-PM1:V",
+      "R3-PA2:VH",
+      "R3-PM2:V",
+      "R3-PA3:VH",
+      "R3-PM3:V",
+      "R3-PA4:IH",
+      "R3-PM4:I",
+      "R3-PA5:IH",
+      "R3-PM5:I",
+      "R3-PA6:IH",
+      "R3-PM6:I",
+      "R3-PA7:VH",
+      "R3-PM7:V",
+      "R3-PA8:VH",
+      "R3-PM8:V",
+      "R3-PA9:VH",
+      "R3-PM9:V",
+      "R3-PA10:IH",
+      "R3-PM10:I",
+      "R3-PA11:IH",
+      "R3-PM11:I",
+      "R3-PA12:IH",
+      "R3-PM12:I",
+      "R3:F",
+      "R3:DF",
+      "R3-PA:Z",
+      "R3-PA:ZH",
+      "R3:S",
+      "R4-PA1:VH",
+      "R4-PM1:V",
+      "R4-PA2:VH",
+      "R4-PM2:V",
+      "R4-PA3:VH",
+      "R4-PM3:V",
+      "R4-PA4:IH",
+      "R4-PM4:I",
+      "R4-PA5:IH",
+      "R4-PM5:I",
+      "R4-PA6:IH",
+      "R4-PM6:I",
+      "R4-PA7:VH",
+      "R4-PM7:V",
+      "R4-PA8:VH",
+      "R4-PM8:V",
+      "R4-PA9:VH",
+      "R4-PM9:V",
+      "R4-PA10:IH",
+      "R4-PM10:I",
+      "R4-PA11:IH",
+      "R4-PM11:I",
+      "R4-PA12:IH",
+      "R4-PM12:I",
+      "R4:F",
+      "R4:DF",
+      "R4-PA:Z",
+      "R4-PA:ZH",
+      "R4:S",
+      "control_panel_log1",
+      "control_panel_log2",
+      "control_panel_log3",
+      "control_panel_log4",
+      "relay1_log",
+      "relay2_log",
+      "relay3_log",
+      "relay4_log",
+      "snort_log1",
+      "snort_log2",
+      "snort_log3",
+      "snort_log4",
+      "marker"
+    ],
+    "file_summaries": [
+      {
+        "file": "data1.csv",
+        "rows": 4966,
+        "cols": 129,
+        "nulls": "0",
+        "dupes": "0",
+        "classes": {
+          "Attack": 3866,
+          "Natural": 1100
+        }
+      },
+      {
+        "file": "data10.csv",
+        "rows": 5569,
+        "cols": 129,
+        "nulls": "0",
+        "dupes": "0",
+        "classes": {
+          "Attack": 3921,
+          "Natural": 1648
+        }
+      },
+      {
+        "file": "data11.csv",
+        "rows": 5251,
+        "cols": 129,
+        "nulls": "0",
+        "dupes": "0",
+        "classes": {
+          "Attack": 3969,
+          "Natural": 1282
+        }
+      },
+      {
+        "file": "data12.csv",
+        "rows": 5224,
+        "cols": 129,
+        "nulls": "0",
+        "dupes": "0",
+        "classes": {
+          "Attack": 3453,
+          "Natural": 1771
+        }
+      },
+      {
+        "file": "data13.csv",
+        "rows": 5271,
+        "cols": 129,
+        "nulls": "0",
+        "dupes": "0",
+        "classes": {
+          "Attack": 4118,
+          "Natural": 1153
+        }
+      },
+      {
+        "file": "data14.csv",
+        "rows": 5115,
+        "cols": 129,
+        "nulls": "0",
+        "dupes": "0",
+        "classes": {
+          "Attack": 3762,
+          "Natural": 1353
+        }
+      },
+      {
+        "file": "data15.csv",
+        "rows": 5276,
+        "cols": 129,
+        "nulls": "0",
+        "dupes": "0",
+        "classes": {
+          "Attack": 3415,
+          "Natural": 1861
+        }
+      },
+      {
+        "file": "data2.csv",
+        "rows": 5069,
+        "cols": 129,
+        "nulls": "0",
+        "dupes": "0",
+        "classes": {
+          "Attack": 3525,
+          "Natural": 1544
+        }
+      },
+      {
+        "file": "data3.csv",
+        "rows": 5415,
+        "cols": 129,
+        "nulls": "0",
+        "dupes": "0",
+        "classes": {
+          "Attack": 3811,
+          "Natural": 1604
+        }
+      },
+      {
+        "file": "data4.csv",
+        "rows": 5202,
+        "cols": 129,
+        "nulls": "0",
+        "dupes": "0",
+        "classes": {
+          "Attack": 3402,
+          "Natural": 1800
+        }
+      },
+      {
+        "file": "data5.csv",
+        "rows": 5161,
+        "cols": 129,
+        "nulls": "0",
+        "dupes": "0",
+        "classes": {
+          "Attack": 3680,
+          "Natural": 1481
+        }
+      },
+      {
+        "file": "data6.csv",
+        "rows": 4967,
+        "cols": 129,
+        "nulls": "0",
+        "dupes": "0",
+        "classes": {
+          "Attack": 3490,
+          "Natural": 1477
+        }
+      },
+      {
+        "file": "data7.csv",
+        "rows": 5236,
+        "cols": 129,
+        "nulls": "0",
+        "dupes": "0",
+        "classes": {
+          "Attack": 3910,
+          "Natural": 1326
+        }
+      },
+      {
+        "file": "data8.csv",
+        "rows": 5315,
+        "cols": 129,
+        "nulls": "0",
+        "dupes": "8",
+        "classes": {
+          "Attack": 3771,
+          "Natural": 1544
+        }
+      },
+      {
+        "file": "data9.csv",
+        "rows": 5340,
+        "cols": 129,
+        "nulls": "0",
+        "dupes": "0",
+        "classes": {
+          "Attack": 3570,
+          "Natural": 1770
+        }
+      }
+    ]
+  },
+  "PMU_Data_with_Anomalies and Events": {
+    "name": "PMU_Data_with_Anomalies and Events",
+    "path": "c:\\ALLMLPROJ\\MAINMLPROJS\\MAJOR PROJECT\\SGSMA_Competiton 2024_PMU_DATA\\PMU_Data_with_Anomalies and Events",
+    "file_count": 8,
+    "summaries": [
+      {
+        "file": "Bus10_Competition_Data.csv",
+        "rows": 161379,
+        "cols": 16,
+        "columns": [
+          "TIMESTAMP",
+          "BUS10_VA_ANG",
+          "BUS10_VA_MAG",
+          "BUS10_VB_ANG",
+          "BUS10_VB_MAG",
+          "BUS10_VC_ANG",
+          "BUS10_VC_MAG",
+          "BUS10_IA_ANG",
+          "BUS10_IA_MAG",
+          "BUS10_IB_ANG",
+          "BUS10_IB_MAG",
+          "BUS10_IC_ANG",
+          "BUS10_IC_MAG",
+          "BUS10_Freq",
+          "BUS10_ROCOF",
+          "Event"
+        ],
+        "target": "Event",
+        "event_counts": {
+          "0": 142444,
+          "3": 9528,
+          "4": 9132,
+          "1": 149,
+          "2": 126
+        },
+        "nulls": {},
+        "dupes": "0",
+        "time_min": 0.0,
+        "time_max": 5379.266000000003,
+        "sampling_rate_hz": 30.3
+      },
+      {
+        "file": "Bus19_Competition_Data.csv",
+        "rows": 161379,
+        "cols": 16,
+        "columns": [
+          "TIMESTAMP",
+          "BUS19_VA_ANG",
+          "BUS19_VA_MAG",
+          "BUS19_VB_ANG",
+          "BUS19_VB_MAG",
+          "BUS19_VC_ANG",
+          "BUS19_VC_MAG",
+          "BUS19_IA_ANG",
+          "BUS19_IA_MAG",
+          "BUS19_IB_ANG",
+          "BUS19_IB_MAG",
+          "BUS19_IC_ANG",
+          "BUS19_IC_MAG",
+          "BUS19_Freq",
+          "BUS19_ROCOF",
+          "Event"
+        ],
+        "target": "Event",
+        "event_counts": {
+          "0": 142444,
+          "3": 9528,
+          "4": 9132,
+          "1": 149,
+          "2": 126
+        },
+        "nulls": {},
+        "dupes": "0",
+        "time_min": 0.0,
+        "time_max": 5379.266000000003,
+        "sampling_rate_hz": 30.3
+      },
+      {
+        "file": "Bus22_Competition_Data.csv",
+        "rows": 161379,
+        "cols": 16,
+        "columns": [
+          "TIMESTAMP",
+          "BUS22_VA_ANG",
+          "BUS22_VA_MAG",
+          "BUS22_VB_ANG",
+          "BUS22_VB_MAG",
+          "BUS22_VC_ANG",
+          "BUS22_VC_MAG",
+          "BUS22_IA_ANG",
+          "BUS22_IA_MAG",
+          "BUS22_IB_ANG",
+          "BUS22_IB_MAG",
+          "BUS22_IC_ANG",
+          "BUS22_IC_MAG",
+          "BUS22_Freq",
+          "BUS22_ROCOF",
+          "Event"
+        ],
+        "target": "Event",
+        "event_counts": {
+          "0": 142444,
+          "3": 9528,
+          "4": 9132,
+          "1": 149,
+          "2": 126
+        },
+        "nulls": {},
+        "dupes": "0",
+        "time_min": 0.0,
+        "time_max": 5379.266000000003,
+        "sampling_rate_hz": 30.3
+      },
+      {
+        "file": "Bus29_Competition_Data.csv",
+        "rows": 161379,
+        "cols": 16,
+        "columns": [
+          "TIMESTAMP",
+          "BUS29_VA_ANG",
+          "BUS29_VA_MAG",
+          "BUS29_VB_ANG",
+          "BUS29_VB_MAG",
+          "BUS29_VC_ANG",
+          "BUS29_VC_MAG",
+          "BUS29_IA_ANG",
+          "BUS29_IA_MAG",
+          "BUS29_IB_ANG",
+          "BUS29_IB_MAG",
+          "BUS29_IC_ANG",
+          "BUS29_IC_MAG",
+          "BUS29_Freq",
+          "BUS29_ROCOF",
+          "Event"
+        ],
+        "target": "Event",
+        "event_counts": {
+          "0": 133798,
+          "4": 9132,
+          "3": 8974,
+          "5": 8646,
+          "6": 554,
+          "1": 149,
+          "2": 126
+        },
+        "nulls": {},
+        "dupes": "0",
+        "time_min": 0.0,
+        "time_max": 5379.266000000003,
+        "sampling_rate_hz": 30.3
+      },
+      {
+        "file": "Bus2_Competition_Data.csv",
+        "rows": 161379,
+        "cols": 16,
+        "columns": [
+          "TIMESTAMP",
+          "BUS2_VA_ANG",
+          "BUS2_VA_MAG",
+          "BUS2_VB_ANG",
+          "BUS2_VB_MAG",
+          "BUS2_VC_ANG",
+          "BUS2_VC_MAG",
+          "BUS2_IA_ANG",
+          "BUS2_IA_MAG",
+          "BUS2_IB_ANG",
+          "BUS2_IB_MAG",
+          "BUS2_IC_ANG",
+          "BUS2_IC_MAG",
+          "BUS2_Freq",
+          "BUS2_ROCOF",
+          "Event"
+        ],
+        "target": "Event",
+        "event_counts": {
+          "0": 142422,
+          "3": 9528,
+          "4": 9132,
+          "1": 149,
+          "2": 126,
+          "7": 22
+        },
+        "nulls": {},
+        "dupes": "0",
+        "time_min": 0.0,
+        "time_max": 5379.266000000003,
+        "sampling_rate_hz": 30.3
+      },
+      {
+        "file": "Bus39_Competition_Data.csv",
+        "rows": 161379,
+        "cols": 16,
+        "columns": [
+          "TIMESTAMP",
+          "BUS39_VA_ANG",
+          "BUS39_VA_MAG",
+          "BUS39_VB_ANG",
+          "BUS39_VB_MAG",
+          "BUS39_VC_ANG",
+          "BUS39_VC_MAG",
+          "BUS39_IA_ANG",
+          "BUS39_IA_MAG",
+          "BUS39_IB_ANG",
+          "BUS39_IB_MAG",
+          "BUS39_IC_ANG",
+          "BUS39_IC_MAG",
+          "BUS39_Freq",
+          "BUS39_ROCOF",
+          "Event"
+        ],
+        "target": "Event",
+        "event_counts": {
+          "0": 142389,
+          "3": 9528,
+          "4": 9132,
+          "1": 149,
+          "2": 126,
+          "7": 55
+        },
+        "nulls": {},
+        "dupes": "0",
+        "time_min": 0.0,
+        "time_max": 5379.266000000003,
+        "sampling_rate_hz": 30.3
+      },
+      {
+        "file": "Bus5_Competition_Data.csv",
+        "rows": 161379,
+        "cols": 16,
+        "columns": [
+          "TIMESTAMP",
+          "BUS5_VA_ANG",
+          "BUS5_VA_MAG",
+          "BUS5_VB_ANG",
+          "BUS5_VB_MAG",
+          "BUS5_VC_ANG",
+          "BUS5_VC_MAG",
+          "BUS5_IA_ANG",
+          "BUS5_IA_MAG",
+          "BUS5_IB_ANG",
+          "BUS5_IB_MAG",
+          "BUS5_IC_ANG",
+          "BUS5_IC_MAG",
+          "BUS5_Freq",
+          "BUS5_ROCOF",
+          "Event"
+        ],
+        "target": "Event",
+        "event_counts": {
+          "0": 142444,
+          "3": 9528,
+          "4": 9132,
+          "1": 149,
+          "2": 126
+        },
+        "nulls": {},
+        "dupes": "0",
+        "time_min": 0.0,
+        "time_max": 5379.266000000003,
+        "sampling_rate_hz": 30.3
+      },
+      {
+        "file": "Bus6_Competition_Data.csv",
+        "rows": 161379,
+        "cols": 16,
+        "columns": [
+          "TIMESTAMP",
+          "BUS6_VA_ANG",
+          "BUS6_VA_MAG",
+          "BUS6_VB_ANG",
+          "BUS6_VB_MAG",
+          "BUS6_VC_ANG",
+          "BUS6_VC_MAG",
+          "BUS6_IA_ANG",
+          "BUS6_IA_MAG",
+          "BUS6_IB_ANG",
+          "BUS6_IB_MAG",
+          "BUS6_IC_ANG",
+          "BUS6_IC_MAG",
+          "BUS6_Freq",
+          "BUS6_ROCOF",
+          "Event"
+        ],
+        "target": "Event",
+        "event_counts": {
+          "0": 142444,
+          "3": 9528,
+          "4": 9132,
+          "1": 149,
+          "2": 126
+        },
+        "nulls": {},
+        "dupes": "0",
+        "time_min": 0.0,
+        "time_max": 5379.266000000003,
+        "sampling_rate_hz": 30.3
+      }
+    ]
+  },
+  "SGSMA_Competition Day_Testdata": {
+    "name": "SGSMA_Competition Day_Testdata",
+    "path": "c:\\ALLMLPROJ\\MAINMLPROJS\\MAJOR PROJECT\\SGSMA_Competiton 2024_PMU_DATA\\SGSMA_Competition Day_Testdata",
+    "set1_count": 8,
+    "set2_count": 8,
+    "has_labels": false
+  },
+  "Balanced_IEC104_Train_Test_CSV_Files": {
+    "name": "Balanced_IEC104_Train_Test_CSV_Files",
+    "root_train": {
+      "rows": 5126,
+      "cols": 86,
+      "classes": {
+        "INIT_DATA": 466,
+        "DISABLE_UNSOLICITED": 466,
+        "WARM_RESTART": 466,
+        "MITM_DOS": 466,
+        "ARP_POISONING": 466,
+        "NORMAL": 466,
+        "DNP3_ENUMERATE": 466,
+        "COLD_RESTART": 466,
+        "DNP3_INFO": 466,
+        "REPLAY": 466,
+        "STOP_APP": 466
+      }
+    },
+    "root_test": {
+      "rows": 2200,
+      "cols": 86,
+      "classes": {
+        "STOP_APP": 200,
+        "DNP3_INFO": 200,
+        "DISABLE_UNSOLICITED": 200,
+        "MITM_DOS": 200,
+        "ARP_POISONING": 200,
+        "WARM_RESTART": 200,
+        "REPLAY": 200,
+        "NORMAL": 200,
+        "DNP3_ENUMERATE": 200,
+        "INIT_DATA": 200,
+        "COLD_RESTART": 200
+      }
+    },
+    "subfolders": {
+      "tests_cic_120": [
+        {
+          "file": "iec104_CICFLOWMETER_test_final.csv",
+          "rows": 2028,
+          "cols": 84,
+          "label_col": "Label",
+          "class_counts": {
+            "c_ci_na_1": 169,
+            "NORMAL": 169,
+            "c_ci_na_1_DoS": 169,
+            "c_rd_na_1": 169,
+            "c_rd_na_1_DoS": 169,
+            "c_rp_na_1": 169,
+            "c_rp_na_1_DoS": 169,
+            "c_sc_na_1": 169,
+            "c_sc_na_1_DoS": 169,
+            "c_se_na_1": 169,
+            "c_se_na_1_DoS": 169,
+            "m_sp_na_1_DoS": 169
+          },
+          "nulls": 0,
+          "dupes": 0
+        },
+        {
+          "file": "iec104_CICFLOWMETER_train_final.csv",
+          "rows": 4800,
+          "cols": 84,
+          "label_col": "Label",
+          "class_counts": {
+            "c_ci_na_1": 400,
+            "NORMAL": 400,
+            "c_ci_na_1_DoS": 400,
+            "c_rd_na_1": 400,
+            "c_rd_na_1_DoS": 400,
+            "c_rp_na_1": 400,
+            "c_rp_na_1_DoS": 400,
+            "c_sc_na_1": 400,
+            "c_sc_na_1_DoS": 400,
+            "c_se_na_1": 400,
+            "c_se_na_1_DoS": 400,
+            "m_sp_na_1_DoS": 400
+          },
+          "nulls": 0,
+          "dupes": 0
+        }
+      ],
+      "tests_cic_15": [
+        {
+          "file": "test_15_cicflow.csv",
+          "rows": 4692,
+          "cols": 84,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 391,
+            "c_ci_na_1": 391,
+            "c_ci_na_1_DoS": 391,
+            "c_rd_na_1": 391,
+            "c_rd_na_1_DoS": 391,
+            "c_rp_na_1": 391,
+            "c_rp_na_1_DoS": 391,
+            "c_sc_na_1": 391,
+            "c_sc_na_1_DoS": 391,
+            "c_se_na_1": 391,
+            "c_se_na_1_DoS": 391,
+            "m_sp_na_1_DoS": 391
+          },
+          "nulls": 81,
+          "dupes": 0
+        },
+        {
+          "file": "train_15_cicflow.csv",
+          "rows": 10968,
+          "cols": 84,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 914,
+            "c_ci_na_1": 914,
+            "c_ci_na_1_DoS": 914,
+            "c_rd_na_1": 914,
+            "c_rd_na_1_DoS": 914,
+            "c_rp_na_1": 914,
+            "c_rp_na_1_DoS": 914,
+            "c_sc_na_1": 914,
+            "c_sc_na_1_DoS": 914,
+            "c_se_na_1": 914,
+            "c_se_na_1_DoS": 914,
+            "m_sp_na_1_DoS": 914
+          },
+          "nulls": 42,
+          "dupes": 0
+        }
+      ],
+      "tests_cic_180": [
+        {
+          "file": "test_180_cicflow.csv",
+          "rows": 1536,
+          "cols": 84,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 128,
+            "c_ci_na_1": 128,
+            "c_ci_na_1_DoS": 128,
+            "c_rd_na_1": 128,
+            "c_rd_na_1_DoS": 128,
+            "c_rp_na_1": 128,
+            "c_rp_na_1_DoS": 128,
+            "c_sc_na_1": 128,
+            "c_sc_na_1_DoS": 128,
+            "c_se_na_1": 128,
+            "c_se_na_1_DoS": 128,
+            "m_sp_na_1_DoS": 128
+          },
+          "nulls": 1,
+          "dupes": 1
+        },
+        {
+          "file": "train_180_cicflow.csv",
+          "rows": 3588,
+          "cols": 84,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 299,
+            "c_ci_na_1": 299,
+            "c_ci_na_1_DoS": 299,
+            "c_rd_na_1": 299,
+            "c_rd_na_1_DoS": 299,
+            "c_rp_na_1": 299,
+            "c_rp_na_1_DoS": 299,
+            "c_sc_na_1": 299,
+            "c_sc_na_1_DoS": 299,
+            "c_se_na_1": 299,
+            "c_se_na_1_DoS": 299,
+            "m_sp_na_1_DoS": 299
+          },
+          "nulls": 0,
+          "dupes": 0
+        }
+      ],
+      "tests_cic_30": [
+        {
+          "file": "test_30_cicflow.csv",
+          "rows": 3420,
+          "cols": 84,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 285,
+            "c_ci_na_1": 285,
+            "c_ci_na_1_DoS": 285,
+            "c_rd_na_1": 285,
+            "c_rd_na_1_DoS": 285,
+            "c_rp_na_1": 285,
+            "c_rp_na_1_DoS": 285,
+            "c_sc_na_1": 285,
+            "c_sc_na_1_DoS": 285,
+            "c_se_na_1": 285,
+            "c_se_na_1_DoS": 285,
+            "m_sp_na_1_DoS": 285
+          },
+          "nulls": 0,
+          "dupes": 0
+        },
+        {
+          "file": "train_30_cicflow.csv",
+          "rows": 7980,
+          "cols": 84,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 665,
+            "c_ci_na_1": 665,
+            "c_ci_na_1_DoS": 665,
+            "c_rd_na_1": 665,
+            "c_rd_na_1_DoS": 665,
+            "c_rp_na_1": 665,
+            "c_rp_na_1_DoS": 665,
+            "c_sc_na_1": 665,
+            "c_sc_na_1_DoS": 665,
+            "c_se_na_1": 665,
+            "c_se_na_1_DoS": 665,
+            "m_sp_na_1_DoS": 665
+          },
+          "nulls": 0,
+          "dupes": 0
+        }
+      ],
+      "tests_cic_60": [
+        {
+          "file": "test_60_CICIFlow.csv",
+          "rows": 2520,
+          "cols": 84,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 210,
+            "c_ci_na_1": 210,
+            "c_ci_na_1_DoS": 210,
+            "c_rd_na_1": 210,
+            "c_rd_na_1_DoS": 210,
+            "c_rp_na_1": 210,
+            "c_rp_na_1_DoS": 210,
+            "c_sc_na_1": 210,
+            "c_sc_na_1_DoS": 210,
+            "c_se_na_1": 210,
+            "c_se_na_1_DoS": 210,
+            "m_sp_na_1_DoS": 210
+          },
+          "nulls": 0,
+          "dupes": 0
+        },
+        {
+          "file": "train_60_CICIFlow.csv",
+          "rows": 5904,
+          "cols": 84,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 492,
+            "c_ci_na_1": 492,
+            "c_ci_na_1_DoS": 492,
+            "c_rd_na_1": 492,
+            "c_rd_na_1_DoS": 492,
+            "c_rp_na_1": 492,
+            "c_rp_na_1_DoS": 492,
+            "c_sc_na_1": 492,
+            "c_sc_na_1_DoS": 492,
+            "c_se_na_1": 492,
+            "c_se_na_1_DoS": 492,
+            "m_sp_na_1_DoS": 492
+          },
+          "nulls": 0,
+          "dupes": 0
+        }
+      ],
+      "tests_cic_90": [
+        {
+          "file": "test_90_cicflow.csv",
+          "rows": 2172,
+          "cols": 84,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 181,
+            "c_ci_na_1": 181,
+            "c_ci_na_1_DoS": 181,
+            "c_rd_na_1": 181,
+            "c_rd_na_1_DoS": 181,
+            "c_rp_na_1": 181,
+            "c_rp_na_1_DoS": 181,
+            "c_sc_na_1": 181,
+            "c_sc_na_1_DoS": 181,
+            "c_se_na_1": 181,
+            "c_se_na_1_DoS": 181,
+            "m_sp_na_1_DoS": 181
+          },
+          "nulls": 0,
+          "dupes": 0
+        },
+        {
+          "file": "train_90_cicflow.csv",
+          "rows": 5088,
+          "cols": 84,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 424,
+            "c_ci_na_1": 424,
+            "c_ci_na_1_DoS": 424,
+            "c_rd_na_1": 424,
+            "c_rd_na_1_DoS": 424,
+            "c_rp_na_1": 424,
+            "c_rp_na_1_DoS": 424,
+            "c_sc_na_1": 424,
+            "c_sc_na_1_DoS": 424,
+            "c_se_na_1": 424,
+            "c_se_na_1_DoS": 424,
+            "m_sp_na_1_DoS": 424
+          },
+          "nulls": 0,
+          "dupes": 0
+        }
+      ],
+      "tests_custom_120": [
+        {
+          "file": "iec104_custom_script_test_final.csv",
+          "rows": 2028,
+          "cols": 112,
+          "label_col": "Label",
+          "class_counts": {
+            "c_ci_na_1_DoS": 169,
+            "NORMAL": 169,
+            "c_ci_na_1": 169,
+            "c_rd_na_1_DoS": 169,
+            "c_rd_na_1": 169,
+            "c_rp_na_1_DoS": 169,
+            "c_rp_na_1": 169,
+            "c_sc_na_1_DoS": 169,
+            "c_sc_na_1": 169,
+            "c_se_na_1_DoS": 169,
+            "c_se_na_1": 169,
+            "m_sp_na_1_DoS": 169
+          },
+          "nulls": 0,
+          "dupes": 0
+        },
+        {
+          "file": "iec104_custom_script_train_final.csv",
+          "rows": 4800,
+          "cols": 112,
+          "label_col": "Label",
+          "class_counts": {
+            "c_ci_na_1_DoS": 400,
+            "NORMAL": 400,
+            "c_ci_na_1": 400,
+            "c_rd_na_1_DoS": 400,
+            "c_rd_na_1": 400,
+            "c_rp_na_1_DoS": 400,
+            "c_rp_na_1": 400,
+            "c_sc_na_1_DoS": 400,
+            "c_sc_na_1": 400,
+            "c_se_na_1_DoS": 400,
+            "c_se_na_1": 400,
+            "m_sp_na_1_DoS": 400
+          },
+          "nulls": 0,
+          "dupes": 0
+        }
+      ],
+      "tests_custom_15": [
+        {
+          "file": "test_15_custom_script.csv",
+          "rows": 4692,
+          "cols": 112,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 391,
+            "c_ci_na_1": 391,
+            "c_ci_na_1_DoS": 391,
+            "c_rd_na_1": 391,
+            "c_rd_na_1_DoS": 391,
+            "c_rp_na_1": 391,
+            "c_rp_na_1_DoS": 391,
+            "c_sc_na_1": 391,
+            "c_sc_na_1_DoS": 391,
+            "c_se_na_1": 391,
+            "c_se_na_1_DoS": 391,
+            "m_sp_na_1_DoS": 391
+          },
+          "nulls": 0,
+          "dupes": 355
+        },
+        {
+          "file": "train_15_custom_script.csv",
+          "rows": 10968,
+          "cols": 112,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 914,
+            "c_ci_na_1": 914,
+            "c_ci_na_1_DoS": 914,
+            "c_rd_na_1": 914,
+            "c_rd_na_1_DoS": 914,
+            "c_rp_na_1": 914,
+            "c_rp_na_1_DoS": 914,
+            "c_sc_na_1": 914,
+            "c_sc_na_1_DoS": 914,
+            "c_se_na_1": 914,
+            "c_se_na_1_DoS": 914,
+            "m_sp_na_1_DoS": 914
+          },
+          "nulls": 0,
+          "dupes": 949
+        }
+      ],
+      "tests_custom_180": [
+        {
+          "file": "test_180_custom_script.csv",
+          "rows": 1536,
+          "cols": 112,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 128,
+            "c_ci_na_1": 128,
+            "c_ci_na_1_DoS": 128,
+            "c_rd_na_1": 128,
+            "c_rd_na_1_DoS": 128,
+            "c_rp_na_1": 128,
+            "c_rp_na_1_DoS": 128,
+            "c_sc_na_1": 128,
+            "c_sc_na_1_DoS": 128,
+            "c_se_na_1": 128,
+            "c_se_na_1_DoS": 128,
+            "m_sp_na_1_DoS": 128
+          },
+          "nulls": 0,
+          "dupes": 0
+        },
+        {
+          "file": "train_180_custom_script.csv",
+          "rows": 3588,
+          "cols": 112,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 299,
+            "c_ci_na_1": 299,
+            "c_ci_na_1_DoS": 299,
+            "c_rd_na_1": 299,
+            "c_rd_na_1_DoS": 299,
+            "c_rp_na_1": 299,
+            "c_rp_na_1_DoS": 299,
+            "c_sc_na_1": 299,
+            "c_sc_na_1_DoS": 299,
+            "c_se_na_1": 299,
+            "c_se_na_1_DoS": 299,
+            "m_sp_na_1_DoS": 299
+          },
+          "nulls": 0,
+          "dupes": 0
+        }
+      ],
+      "tests_custom_30": [
+        {
+          "file": "test_30_custom_script.csv",
+          "rows": 3420,
+          "cols": 112,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 285,
+            "c_ci_na_1": 285,
+            "c_ci_na_1_DoS": 285,
+            "c_rd_na_1": 285,
+            "c_rd_na_1_DoS": 285,
+            "c_rp_na_1": 285,
+            "c_rp_na_1_DoS": 285,
+            "c_sc_na_1": 285,
+            "c_sc_na_1_DoS": 285,
+            "c_se_na_1": 285,
+            "c_se_na_1_DoS": 285,
+            "m_sp_na_1_DoS": 285
+          },
+          "nulls": 0,
+          "dupes": 199
+        },
+        {
+          "file": "train_30_custom_script.csv",
+          "rows": 7980,
+          "cols": 112,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 665,
+            "c_ci_na_1": 665,
+            "c_ci_na_1_DoS": 665,
+            "c_rd_na_1": 665,
+            "c_rd_na_1_DoS": 665,
+            "c_rp_na_1": 665,
+            "c_rp_na_1_DoS": 665,
+            "c_sc_na_1": 665,
+            "c_sc_na_1_DoS": 665,
+            "c_se_na_1": 665,
+            "c_se_na_1_DoS": 665,
+            "m_sp_na_1_DoS": 665
+          },
+          "nulls": 0,
+          "dupes": 386
+        }
+      ],
+      "tests_custom_60": [
+        {
+          "file": "test_60_custom_script.csv",
+          "rows": 2520,
+          "cols": 112,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 210,
+            "c_ci_na_1": 210,
+            "c_ci_na_1_DoS": 210,
+            "c_rd_na_1": 210,
+            "c_rd_na_1_DoS": 210,
+            "c_rp_na_1": 210,
+            "c_rp_na_1_DoS": 210,
+            "c_sc_na_1": 210,
+            "c_sc_na_1_DoS": 210,
+            "c_se_na_1": 210,
+            "c_se_na_1_DoS": 210,
+            "m_sp_na_1_DoS": 210
+          },
+          "nulls": 0,
+          "dupes": 1
+        },
+        {
+          "file": "train_60_custom_script.csv",
+          "rows": 5904,
+          "cols": 112,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 492,
+            "c_ci_na_1": 492,
+            "c_ci_na_1_DoS": 492,
+            "c_rd_na_1": 492,
+            "c_rd_na_1_DoS": 492,
+            "c_rp_na_1": 492,
+            "c_rp_na_1_DoS": 492,
+            "c_sc_na_1": 492,
+            "c_sc_na_1_DoS": 492,
+            "c_se_na_1": 492,
+            "c_se_na_1_DoS": 492,
+            "m_sp_na_1_DoS": 492
+          },
+          "nulls": 0,
+          "dupes": 0
+        }
+      ],
+      "tests_custom_90": [
+        {
+          "file": "test_90_custom_script.csv",
+          "rows": 2172,
+          "cols": 112,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 181,
+            "c_ci_na_1": 181,
+            "c_ci_na_1_DoS": 181,
+            "c_rd_na_1": 181,
+            "c_rd_na_1_DoS": 181,
+            "c_rp_na_1": 181,
+            "c_rp_na_1_DoS": 181,
+            "c_sc_na_1": 181,
+            "c_sc_na_1_DoS": 181,
+            "c_se_na_1": 181,
+            "c_se_na_1_DoS": 181,
+            "m_sp_na_1_DoS": 181
+          },
+          "nulls": 0,
+          "dupes": 0
+        },
+        {
+          "file": "train_90_custom_script.csv",
+          "rows": 5088,
+          "cols": 112,
+          "label_col": "Label",
+          "class_counts": {
+            "NORMAL": 424,
+            "c_ci_na_1": 424,
+            "c_ci_na_1_DoS": 424,
+            "c_rd_na_1": 424,
+            "c_rd_na_1_DoS": 424,
+            "c_rp_na_1": 424,
+            "c_rp_na_1_DoS": 424,
+            "c_sc_na_1": 424,
+            "c_sc_na_1_DoS": 424,
+            "c_se_na_1": 424,
+            "c_se_na_1_DoS": 424,
+            "m_sp_na_1_DoS": 424
+          },
+          "nulls": 0,
+          "dupes": 0
+        }
+      ]
+    }
+  },
+  "data4cyber_dataset": {
+    "name": "data4cyber_dataset",
+    "path": "c:\\ALLMLPROJ\\MAINMLPROJS\\MAJOR PROJECT\\data4cyber_dataset",
+    "scenarios": {
+      "S0_benign_baseline": {
+        "family": "benign",
+        "rows": 1798,
+        "cols": 154,
+        "attack_active": {
+          "false": 1798
+        },
+        "attack_phases": {
+          "normal": 1798
+        },
+        "nulls": 0,
+        "dupes": 0,
+        "leakage_columns": [],
+        "start_time": "2026-03-05 13:19:02.660000+00:00",
+        "end_time": "2026-03-05 13:48:59.660000+00:00"
+      },
+      "S1_industroyer_pv": {
+        "family": "industroyer_modbus",
+        "rows": 1798,
+        "cols": 156,
+        "attack_active": {
+          "true": 913,
+          "false": 885
+        },
+        "attack_phases": {
+          "s1_industroyer_active_solar_power": 902,
+          "normal": 885,
+          "s1_reconnaissance_nmap_solar_power": 11
+        },
+        "nulls": 0,
+        "dupes": 0,
+        "leakage_columns": [
+          "Attacker.event"
+        ],
+        "start_time": "2026-03-06 10:49:02.510000+00:00",
+        "end_time": "2026-03-06 11:18:59.510000+00:00"
+      },
+      "S1_industroyer_pv_alt": {
+        "family": "industroyer_modbus",
+        "rows": 1792,
+        "cols": 156,
+        "attack_active": {
+          "true": 910,
+          "false": 882
+        },
+        "attack_phases": {
+          "s1_alt_industroyer_active_solar_power": 901,
+          "normal": 882,
+          "s1_alt_reconnaissance_nmap_solar_power": 9
+        },
+        "nulls": 0,
+        "dupes": 0,
+        "leakage_columns": [
+          "Attacker.event"
+        ],
+        "start_time": "2026-03-05 14:22:08.330000+00:00",
+        "end_time": "2026-03-05 14:51:59.330000+00:00"
+      },
+      "S2_industroyer_bss": {
+        "family": "industroyer_modbus",
+        "rows": 1768,
+        "cols": 156,
+        "attack_active": {
+          "true": 903,
+          "false": 865
+        },
+        "attack_phases": {
+          "s2_industroyer_active_battery_storage": 901,
+          "normal": 865,
+          "s2_reconnaissance_nmap_battery_storage": 2
+        },
+        "nulls": 0,
+        "dupes": 0,
+        "leakage_columns": [
+          "Attacker.event"
+        ],
+        "start_time": "2026-03-05 15:04:32.030000+00:00",
+        "end_time": "2026-03-05 15:33:59.030000+00:00"
+      },
+      "S3_arp_spoof_bss_meter_half_values": {
+        "family": "mitm_false_data_injection",
+        "rows": 1800,
+        "cols": 158,
+        "attack_active": {
+          "true": 1800
+        },
+        "attack_phases": {
+          "s3_attack_window": 1800
+        },
+        "nulls": 0,
+        "dupes": 0,
+        "leakage_columns": [
+          "Attacker.event",
+          "Attacker.new_value",
+          "Attacker.old_value"
+        ],
+        "start_time": "2026-03-05 16:15:00.460000+00:00",
+        "end_time": "2026-03-05 16:44:59.460000+00:00"
+      },
+      "S4_arp_spoof_loads_pv_two_phase": {
+        "family": "mitm_false_data_injection",
+        "rows": 1798,
+        "cols": 158,
+        "attack_active": {
+          "true": 1257,
+          "false": 541
+        },
+        "attack_phases": {
+          "s4_mitm_phase_1": 624,
+          "s4_mitm_phase_2": 623,
+          "normal": 541,
+          "s4_reconnaissance_nmap_mitm": 10
+        },
+        "nulls": 0,
+        "dupes": 0,
+        "leakage_columns": [
+          "Attacker.event",
+          "Attacker.new_value",
+          "Attacker.old_value"
+        ],
+        "start_time": "2026-03-06 15:13:02.440000+00:00",
+        "end_time": "2026-03-06 15:42:59.440000+00:00"
+      },
+      "S5_arp_spoof_loads_pv_bss_two_phase": {
+        "family": "mitm_false_data_injection",
+        "rows": 1800,
+        "cols": 158,
+        "attack_active": {
+          "true": 1341,
+          "false": 459
+        },
+        "attack_phases": {
+          "s5_mitm_phase_1": 749,
+          "s5_mitm_phase_2": 582,
+          "normal": 459,
+          "s5_reconnaissance_nmap_mitm": 10
+        },
+        "nulls": 0,
+        "dupes": 0,
+        "leakage_columns": [
+          "Attacker.event",
+          "Attacker.new_value",
+          "Attacker.old_value"
+        ],
+        "start_time": "2026-03-06 15:56:00.430000+00:00",
+        "end_time": "2026-03-06 16:25:59.430000+00:00"
+      },
+      "S6_mqtt_supply_chain_compromise": {
+        "family": "mqtt_price_signal_manipulation",
+        "rows": 1800,
+        "cols": 156,
+        "attack_active": {
+          "true": 1350,
+          "false": 450
+        },
+        "attack_phases": {
+          "s6_attack_mqtt": 900,
+          "normal": 450,
+          "s6_mqtt_price_manipulation": 450
+        },
+        "nulls": 0,
+        "dupes": 0,
+        "leakage_columns": [],
+        "start_time": "2026-03-06 13:48:00.690000+00:00",
+        "end_time": "2026-03-06 14:17:59.690000+00:00"
+      }
+    },
+    "total_rows": 14354,
+    "families": {
+      "benign": 1798,
+      "industroyer_modbus": 5358,
+      "mitm_false_data_injection": 5398,
+      "mqtt_price_signal_manipulation": 1800
+    },
+    "phases": {
+      "normal": 5880,
+      "s1_industroyer_active_solar_power": 902,
+      "s1_reconnaissance_nmap_solar_power": 11,
+      "s1_alt_industroyer_active_solar_power": 901,
+      "s1_alt_reconnaissance_nmap_solar_power": 9,
+      "s2_industroyer_active_battery_storage": 901,
+      "s2_reconnaissance_nmap_battery_storage": 2,
+      "s3_attack_window": 1800,
+      "s4_mitm_phase_1": 624,
+      "s4_mitm_phase_2": 623,
+      "s4_reconnaissance_nmap_mitm": 10,
+      "s5_mitm_phase_1": 749,
+      "s5_mitm_phase_2": 582,
+      "s5_reconnaissance_nmap_mitm": 10,
+      "s6_attack_mqtt": 900,
+      "s6_mqtt_price_manipulation": 450
+    }
+  }
+}

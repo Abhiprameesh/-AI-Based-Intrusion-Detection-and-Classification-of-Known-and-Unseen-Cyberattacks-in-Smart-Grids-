@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.8277623026926648,
+  "precision": 0.8806228373702422,
+  "recall": 0.8137490007993605,
+  "f1": 0.8458662235147486,
+  "macro_f1": 0.825352890821025,
+  "weighted_f1": 0.8286670225654148,
+  "fpr": 0.15282392026578073,
+  "fnr": 0.18625099920063948,
+  "tp": 1018,
+  "fp": 138,
+  "tn": 765,
+  "fn": 233,
+  "roc_auc": 0.8715778207998386,
+  "pr_auc": 0.8675402609470336,
+  "confusion_matrix": [
+    [
+      765,
+      138
+    ],
+    [
+      233,
+      1018
+    ]
+  ],
+  "training_time_sec": 0.37816357612609863,
+  "inference_time_total_sec": 0.0009963512420654297,
+  "latency_per_sample_ms": 0.00046255860820122084,
+  "model_size_kb": 2.2763671875,
+  "num_test_samples": 2154,
+  "model": "SVM",
+  "dataset_name": "data4cyber_dataset",
+  "task": "binary",
+  "feature_count": 150,
+  "train_samples": 10047,
+  "test_samples": 2154
+}

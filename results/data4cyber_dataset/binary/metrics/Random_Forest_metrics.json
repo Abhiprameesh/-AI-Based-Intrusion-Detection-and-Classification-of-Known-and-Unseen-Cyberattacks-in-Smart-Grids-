@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.9976787372330548,
+  "precision": 0.9968102073365231,
+  "recall": 0.9992006394884093,
+  "f1": 0.998003992015968,
+  "macro_f1": 0.9976154180823046,
+  "weighted_f1": 0.9976781960437321,
+  "fpr": 0.004429678848283499,
+  "fnr": 0.0007993605115907274,
+  "tp": 1250,
+  "fp": 4,
+  "tn": 899,
+  "fn": 1,
+  "roc_auc": 0.9999818528344545,
+  "pr_auc": 0.9999865488366404,
+  "confusion_matrix": [
+    [
+      899,
+      4
+    ],
+    [
+      1,
+      1250
+    ]
+  ],
+  "training_time_sec": 0.9195113182067871,
+  "inference_time_total_sec": 0.06403493881225586,
+  "latency_per_sample_ms": 0.029728383849700956,
+  "model_size_kb": 3629.3837890625,
+  "num_test_samples": 2154,
+  "model": "Random_Forest",
+  "dataset_name": "data4cyber_dataset",
+  "task": "binary",
+  "feature_count": 150,
+  "train_samples": 10047,
+  "test_samples": 2154
+}

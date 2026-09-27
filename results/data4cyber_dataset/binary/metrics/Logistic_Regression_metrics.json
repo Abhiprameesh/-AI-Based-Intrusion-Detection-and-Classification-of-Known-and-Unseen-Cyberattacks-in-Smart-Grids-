@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.8672237697307336,
+  "precision": 0.902418682235196,
+  "recall": 0.864908073541167,
+  "f1": 0.883265306122449,
+  "macro_f1": 0.864668175127963,
+  "weighted_f1": 0.8676727255393284,
+  "fpr": 0.12956810631229235,
+  "fnr": 0.13509192645883294,
+  "tp": 1082,
+  "fp": 117,
+  "tn": 786,
+  "fn": 169,
+  "roc_auc": 0.9514041037380505,
+  "pr_auc": 0.9640720310259672,
+  "confusion_matrix": [
+    [
+      786,
+      117
+    ],
+    [
+      169,
+      1082
+    ]
+  ],
+  "training_time_sec": 0.8565211296081543,
+  "inference_time_total_sec": 0.0010006427764892578,
+  "latency_per_sample_ms": 0.00046455096401544,
+  "model_size_kb": 2.0146484375,
+  "num_test_samples": 2154,
+  "model": "Logistic_Regression",
+  "dataset_name": "data4cyber_dataset",
+  "task": "binary",
+  "feature_count": 150,
+  "train_samples": 10047,
+  "test_samples": 2154
+}

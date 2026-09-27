@@ -1,0 +1,14 @@
+{
+  "approach": "Autoencoder_Residual_Thresholding",
+  "unseen_attack_name": "MITM_DOS",
+  "threshold": 0.2638765573501587,
+  "unseen_attack_detection_rate": 0.89,
+  "known_attack_detection_rate": 0.36777777777777776,
+  "false_positive_rate_on_normal": 0.01,
+  "overall_accuracy": 0.4718181818181818,
+  "overall_f1": 0.5911330049261084,
+  "overall_roc_auc": 0.8289924999999999,
+  "num_normal_test": 200,
+  "num_known_test": 1800,
+  "num_unseen_test": 200
+}

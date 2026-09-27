@@ -1,0 +1,14 @@
+{
+  "approach": "Autoencoder_Residual_Thresholding",
+  "unseen_attack_name": "c_ci_na_1_DoS",
+  "threshold": 0.9394533634185791,
+  "unseen_attack_detection_rate": 0.04092071611253197,
+  "known_attack_detection_rate": 0.14808184143222505,
+  "false_positive_rate_on_normal": 0.01278772378516624,
+  "overall_accuracy": 0.20907928388746802,
+  "overall_f1": 0.24280759028769638,
+  "overall_roc_auc": 0.902344723257721,
+  "num_normal_test": 391,
+  "num_known_test": 3910,
+  "num_unseen_test": 391
+}

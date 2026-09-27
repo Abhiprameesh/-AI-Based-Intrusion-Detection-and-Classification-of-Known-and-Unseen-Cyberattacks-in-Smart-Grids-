@@ -1,0 +1,223 @@
+{
+  "accuracy": 0.9345454545454546,
+  "macro_precision": 0.9423191546603525,
+  "macro_recall": 0.9345454545454545,
+  "macro_f1": 0.9323254509327348,
+  "weighted_precision": 0.9423191546603524,
+  "weighted_recall": 0.9345454545454546,
+  "weighted_f1": 0.9323254509327344,
+  "per_class_metrics": {
+    "ARP_POISONING": {
+      "precision": 1.0,
+      "recall": 0.855,
+      "f1": 0.921832884097035
+    },
+    "COLD_RESTART": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "DISABLE_UNSOLICITED": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "DNP3_ENUMERATE": {
+      "precision": 0.9009009009009009,
+      "recall": 1.0,
+      "f1": 0.9478672985781991
+    },
+    "DNP3_INFO": {
+      "precision": 1.0,
+      "recall": 0.89,
+      "f1": 0.9417989417989417
+    },
+    "INIT_DATA": {
+      "precision": 0.8045112781954887,
+      "recall": 0.535,
+      "f1": 0.6426426426426426
+    },
+    "MITM_DOS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "NORMAL": {
+      "precision": 0.9852216748768473,
+      "recall": 1.0,
+      "f1": 0.9925558312655087
+    },
+    "REPLAY": {
+      "precision": 0.9852216748768473,
+      "recall": 1.0,
+      "f1": 0.9925558312655087
+    },
+    "STOP_APP": {
+      "precision": 0.6896551724137931,
+      "recall": 1.0,
+      "f1": 0.8163265306122449
+    },
+    "WARM_RESTART": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      171,
+      0,
+      0,
+      0,
+      0,
+      26,
+      0,
+      0,
+      3,
+      0,
+      0
+    ],
+    [
+      0,
+      200,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      200,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      200,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      22,
+      178,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      107,
+      0,
+      3,
+      0,
+      90,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      200,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      200,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      200,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      200,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      200
+    ]
+  ],
+  "training_time_sec": 0.1377098560333252,
+  "inference_time_total_sec": 0.0009949207305908203,
+  "latency_per_sample_ms": 0.00045223669572310013,
+  "model_size_kb": 15.4384765625,
+  "num_test_samples": 2200,
+  "num_classes": 11,
+  "model": "Decision_Tree",
+  "dataset_name": "CICFlowMeter_Balanced_DNP3_SCADA",
+  "task": "multiclass",
+  "feature_count": 77,
+  "train_samples": 4357,
+  "test_samples": 2200
+}

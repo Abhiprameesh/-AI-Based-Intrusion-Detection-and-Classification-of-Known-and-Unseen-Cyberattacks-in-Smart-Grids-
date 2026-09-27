@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.9986072423398329,
+  "precision": 0.9984025559105432,
+  "recall": 0.9992006394884093,
+  "f1": 0.9988014382740711,
+  "macro_f1": 0.9985696942062876,
+  "weighted_f1": 0.9986071347520575,
+  "fpr": 0.0022148394241417496,
+  "fnr": 0.0007993605115907274,
+  "tp": 1250,
+  "fp": 2,
+  "tn": 901,
+  "fn": 1,
+  "roc_auc": 0.9999845085172173,
+  "pr_auc": 0.9999884520426179,
+  "confusion_matrix": [
+    [
+      901,
+      2
+    ],
+    [
+      1,
+      1250
+    ]
+  ],
+  "training_time_sec": 1.914581298828125,
+  "inference_time_total_sec": 0.004998683929443359,
+  "latency_per_sample_ms": 0.0023206517778288577,
+  "model_size_kb": 217.43359375,
+  "num_test_samples": 2154,
+  "model": "XGBoost",
+  "dataset_name": "data4cyber_dataset",
+  "task": "binary",
+  "feature_count": 150,
+  "train_samples": 10047,
+  "test_samples": 2154
+}

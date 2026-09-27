@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.9993606138107417,
+  "precision": 1.0,
+  "recall": 0.9993024877935364,
+  "f1": 0.9996511222235144,
+  "macro_f1": 0.9979147330862794,
+  "weighted_f1": 0.9993617240339752,
+  "fpr": 0.0,
+  "fnr": 0.0006975122064636131,
+  "tp": 4298,
+  "fp": 0,
+  "tn": 391,
+  "fn": 3,
+  "roc_auc": 0.9996551090539225,
+  "pr_auc": 0.9999707089101801,
+  "confusion_matrix": [
+    [
+      391,
+      0
+    ],
+    [
+      3,
+      4298
+    ]
+  ],
+  "training_time_sec": 0.03214097023010254,
+  "inference_time_total_sec": 0.0009799003601074219,
+  "latency_per_sample_ms": 0.0002088449190339774,
+  "model_size_kb": 1.4365234375,
+  "num_test_samples": 4692,
+  "model": "Logistic_Regression",
+  "dataset_name": "Balanced_IEC104_Train_Test_CSV_Files",
+  "task": "binary",
+  "feature_count": 76,
+  "train_samples": 9322,
+  "test_samples": 4692
+}

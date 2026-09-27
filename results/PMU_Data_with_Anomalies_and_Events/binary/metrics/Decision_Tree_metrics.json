@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.9769141818782523,
+  "precision": 0.9735729386892178,
+  "recall": 0.889210716871832,
+  "f1": 0.9294815188595938,
+  "macro_f1": 0.957839695258542,
+  "weighted_f1": 0.9764937397651267,
+  "fpr": 0.004982312789596931,
+  "fnr": 0.11078928312816799,
+  "tp": 3684,
+  "fp": 100,
+  "tn": 19971,
+  "fn": 459,
+  "roc_auc": 0.9220574467278863,
+  "pr_auc": 0.8899588476312259,
+  "confusion_matrix": [
+    [
+      19971,
+      100
+    ],
+    [
+      459,
+      3684
+    ]
+  ],
+  "training_time_sec": 3.4684150218963623,
+  "inference_time_total_sec": 0.003988742828369141,
+  "latency_per_sample_ms": 0.00016472878617201375,
+  "model_size_kb": 51.8056640625,
+  "num_test_samples": 24214,
+  "model": "Decision_Tree",
+  "dataset_name": "PMU_Data_with_Anomalies_and_Events",
+  "task": "binary",
+  "feature_count": 14,
+  "train_samples": 112962,
+  "test_samples": 24214
+}

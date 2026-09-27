@@ -1,0 +1,223 @@
+{
+  "accuracy": 0.9872727272727273,
+  "macro_precision": 0.9879450941684733,
+  "macro_recall": 0.9872727272727272,
+  "macro_f1": 0.9872473829280469,
+  "weighted_precision": 0.9879450941684734,
+  "weighted_recall": 0.9872727272727273,
+  "weighted_f1": 0.987247382928047,
+  "per_class_metrics": {
+    "ARP_POISONING": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "COLD_RESTART": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "DISABLE_UNSOLICITED": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "DNP3_ENUMERATE": {
+      "precision": 0.9128440366972477,
+      "recall": 0.995,
+      "f1": 0.9521531100478469
+    },
+    "DNP3_INFO": {
+      "precision": 0.9945054945054945,
+      "recall": 0.905,
+      "f1": 0.9476439790575916
+    },
+    "INIT_DATA": {
+      "precision": 1.0,
+      "recall": 0.99,
+      "f1": 0.9949748743718593
+    },
+    "MITM_DOS": {
+      "precision": 0.9900990099009901,
+      "recall": 1.0,
+      "f1": 0.9950248756218906
+    },
+    "NORMAL": {
+      "precision": 0.9848484848484849,
+      "recall": 0.975,
+      "f1": 0.9798994974874372
+    },
+    "REPLAY": {
+      "precision": 0.9900990099009901,
+      "recall": 1.0,
+      "f1": 0.9950248756218906
+    },
+    "STOP_APP": {
+      "precision": 0.995,
+      "recall": 0.995,
+      "f1": 0.995
+    },
+    "WARM_RESTART": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      200,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      200,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      200,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      199,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      19,
+      181,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      198,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      200,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      195,
+      2,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      200,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      199,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      200
+    ]
+  ],
+  "training_time_sec": 2.6131937503814697,
+  "inference_time_total_sec": 0.010999441146850586,
+  "latency_per_sample_ms": 0.004999745975841175,
+  "model_size_kb": 1072.0908203125,
+  "num_test_samples": 2200,
+  "num_classes": 11,
+  "model": "XGBoost",
+  "dataset_name": "CICFlowMeter_Balanced_DNP3_SCADA",
+  "task": "multiclass",
+  "feature_count": 77,
+  "train_samples": 4357,
+  "test_samples": 2200
+}

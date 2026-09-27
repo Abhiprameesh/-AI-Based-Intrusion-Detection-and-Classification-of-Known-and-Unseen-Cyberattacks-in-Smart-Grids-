@@ -1,0 +1,37 @@
+{
+  "accuracy": 0.9981429897864438,
+  "precision": 0.9984012789768185,
+  "recall": 0.9984012789768185,
+  "f1": 0.9984012789768185,
+  "macro_f1": 0.9980932197763384,
+  "weighted_f1": 0.9981429897864438,
+  "fpr": 0.0022148394241417496,
+  "fnr": 0.0015987210231814548,
+  "tp": 1249,
+  "fp": 2,
+  "tn": 901,
+  "fn": 2,
+  "roc_auc": 0.9980604663555976,
+  "pr_auc": 0.9976875869633854,
+  "confusion_matrix": [
+    [
+      901,
+      2
+    ],
+    [
+      2,
+      1249
+    ]
+  ],
+  "training_time_sec": 0.7225942611694336,
+  "inference_time_total_sec": 0.001001119613647461,
+  "latency_per_sample_ms": 0.0004647723368836866,
+  "model_size_kb": 19.6181640625,
+  "num_test_samples": 2154,
+  "model": "Decision_Tree",
+  "dataset_name": "data4cyber_dataset",
+  "task": "binary",
+  "feature_count": 150,
+  "train_samples": 10047,
+  "test_samples": 2154
+}
