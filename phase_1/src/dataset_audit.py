@@ -2,9 +2,10 @@ import os
 import glob
 import json
 import pandas as pd
-import numpy as np
-
-WORKSPACE = r"c:\ALLMLPROJ\MAINMLPROJS\MAJOR PROJECT"
+PHASE_1_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+ROOT_DIR = os.path.abspath(os.path.join(PHASE_1_DIR, ".."))
+WORKSPACE = os.environ.get("MAJOR_PROJECT_ROOT", ROOT_DIR)
+REPORTS_DIR = os.path.join(PHASE_1_DIR, "reports")
 
 def audit_binary_all_natural():
     print("\n" + "="*80)
@@ -275,6 +276,6 @@ if __name__ == '__main__':
         'data4cyber_dataset': res_data4cyber
     }
     
-    with open(os.path.join(WORKSPACE, "reports", "dataset_audit_raw.json"), 'w') as f:
+    with open(os.path.join(REPORTS_DIR, "dataset_audit_raw.json"), 'w') as f:
         json.dump(audit_summary, f, indent=2, default=str)
-    print("\nSaved raw audit data to reports/dataset_audit_raw.json")
+    print(f"\nSaved raw audit data to {os.path.join(REPORTS_DIR, 'dataset_audit_raw.json')}")

@@ -55,9 +55,9 @@ desktop.ini
 *.bin
 *.weights
 *.safetensors
-results/**/models/
-models/*
-!models/.gitkeep
+**/models/*
+!**/models/.gitkeep
+**/results/**/models/
 
 # ==============================================================================
 # Large Raw Datasets & Network Capture PCAPs (>100MB Total)

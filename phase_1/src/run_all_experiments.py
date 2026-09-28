@@ -1,40 +1,73 @@
 import os
 import sys
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+PHASE_1_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+ROOT_DIR = os.path.abspath(os.path.join(PHASE_1_DIR, '..'))
+for p in [PHASE_1_DIR, ROOT_DIR]:
+    if p not in sys.path:
+        sys.path.insert(0, p)
+
 import time
 import numpy as np
 import pandas as pd
 import torch
 
-from src.utils import set_seed, ensure_dir, save_json, save_model
-from src.data_loader import (
-    load_binary_all_natural,
-    load_cicflowmeter_dnp3,
-    load_data4cyber,
-    load_pmu_sgsma,
-    get_preprocessor
-)
-from src.train_classical import train_and_eval_binary_models, train_and_eval_multiclass_models
-from src.train_deep_learning import (
-    train_tabular_mlp,
-    Conv1DTemporalNet,
-    LSTMTemporalNet,
-    CNNLSTMTemporalNet,
-    DEVICE
-)
-from src.anomaly_detection import train_autoencoder, evaluate_anomaly_detector, IsolationForest, OneClassSVM
-from src.unseen_attack import evaluate_unseen_attack_detection
-from src.visualization import (
-    plot_confusion_matrix,
-    plot_roc_pr_curves,
-    plot_feature_importances,
-    plot_reconstruction_distributions
-)
-from src.experiment_tracker import log_model_result, MASTER_COMPARISON_CSV, DATASET_COMPARISON_CSV
+try:
+    from phase_1.src.utils import set_seed, ensure_dir, save_json, save_model
+    from phase_1.src.data_loader import (
+        load_binary_all_natural,
+        load_cicflowmeter_dnp3,
+        load_data4cyber,
+        load_pmu_sgsma,
+        get_preprocessor
+    )
+    from phase_1.src.train_classical import train_and_eval_binary_models, train_and_eval_multiclass_models
+    from phase_1.src.train_deep_learning import (
+        train_tabular_mlp,
+        Conv1DTemporalNet,
+        LSTMTemporalNet,
+        CNNLSTMTemporalNet,
+        DEVICE
+    )
+    from phase_1.src.anomaly_detection import train_autoencoder, evaluate_anomaly_detector, IsolationForest, OneClassSVM
+    from phase_1.src.unseen_attack import evaluate_unseen_attack_detection
+    from phase_1.src.visualization import (
+        plot_confusion_matrix,
+        plot_roc_pr_curves,
+        plot_feature_importances,
+        plot_reconstruction_distributions
+    )
+    from phase_1.src.experiment_tracker import log_model_result, MASTER_COMPARISON_CSV, DATASET_COMPARISON_CSV
+except ModuleNotFoundError:
+    from src.utils import set_seed, ensure_dir, save_json, save_model
+    from src.data_loader import (
+        load_binary_all_natural,
+        load_cicflowmeter_dnp3,
+        load_data4cyber,
+        load_pmu_sgsma,
+        get_preprocessor
+    )
+    from src.train_classical import train_and_eval_binary_models, train_and_eval_multiclass_models
+    from src.train_deep_learning import (
+        train_tabular_mlp,
+        Conv1DTemporalNet,
+        LSTMTemporalNet,
+        CNNLSTMTemporalNet,
+        DEVICE
+    )
+    from src.anomaly_detection import train_autoencoder, evaluate_anomaly_detector, IsolationForest, OneClassSVM
+    from src.unseen_attack import evaluate_unseen_attack_detection
+    from src.visualization import (
+        plot_confusion_matrix,
+        plot_roc_pr_curves,
+        plot_feature_importances,
+        plot_reconstruction_distributions
+    )
+    from src.experiment_tracker import log_model_result, MASTER_COMPARISON_CSV, DATASET_COMPARISON_CSV
 
-WORKSPACE = r"c:\ALLMLPROJ\MAINMLPROJS\MAJOR PROJECT"
-RESULTS_DIR = os.path.join(WORKSPACE, "results")
-REPORTS_DIR = os.path.join(WORKSPACE, "reports")
+WORKSPACE = os.environ.get("MAJOR_PROJECT_ROOT", ROOT_DIR)
+RESULTS_DIR = os.path.join(PHASE_1_DIR, "results")
+REPORTS_DIR = os.path.join(PHASE_1_DIR, "reports")
 PLOTS_DIR = os.path.join(REPORTS_DIR, "plots")
 
 ensure_dir(RESULTS_DIR)

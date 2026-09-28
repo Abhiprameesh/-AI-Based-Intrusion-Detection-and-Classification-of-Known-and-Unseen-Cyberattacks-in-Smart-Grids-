@@ -73,39 +73,41 @@ Incoming Smart Grid Telemetry (Data4Cyber Multi-Modal Stream)
 ## 📁 Repository Directory Structure
 
 ```text
-MAJOR PROJECT/
+.
+├── phase_1/                                # Phase 1: Model Benchmarking & Dataset Selection
+│   ├── README.md                           # Phase 1 documentation & executive findings
+│   ├── experiment_config.yaml              # Reproducibility configuration & parameters
+│   ├── models/                             # Saved models registry (.gitkeep tracked)
+│   ├── notebooks/                          # 7 Interactive, Colab-ready Jupyter Notebooks
+│   │   ├── 01_dataset_discovery.ipynb      # Automated dataset discovery & registration
+│   │   ├── 02_dataset_analysis.ipynb       # Data audit, leakage checks & distributions
+│   │   ├── 03_binary_classification.ipynb  # Binary attack detection training suite
+│   │   ├── 04_multiclass_classification.ipynb # Multiclass known-attack attribution
+│   │   ├── 05_anomaly_detection.ipynb      # Deep Autoencoder & Isolation Forest
+│   │   ├── 06_unseen_attack_detection.ipynb # Zero-day / held-out attack evaluation
+│   │   └── 07_final_comparison.ipynb       # Master benchmark comparison & selection
+│   │
+│   ├── reports/                            # Generated reports, matrices, and plots
+│   │   ├── dataset_registry.csv            # Automated dataset catalog
+│   │   ├── dataset_registry.md             # Detailed dataset documentation
+│   │   ├── dataset_comparison.csv          # Cross-dataset comparative matrix
+│   │   ├── final_model_comparison.csv      # Master 54-model benchmark results
+│   │   ├── final_dataset_selection.md      # Multi-criteria dataset selection report
+│   │   ├── final_experimental_report.md    # Complete academic experimental report
+│   │   └── plots/                          # Confusion matrices, ROC/PR curves & trade-offs
+│   │
+│   ├── results/                            # JSON evaluation metrics & CSV logs
+│   └── src/                                # Modular, reusable Python package
+│       ├── data_loader.py                  # Robust data loaders with leakage prevention
+│       ├── preprocessing.py                # Preprocessing pipelines fitted strictly on train
+│       ├── feature_selection.py            # Feature importance filtering
+│       ├── train_classical.py              # Classical ML training suite
+│       ├── train_deep_learning.py          # PyTorch MLP, 1D-CNN, LSTM, CNN-LSTM
+│       ├── anomaly_detection.py            # PyTorch Deep Autoencoders & Isolation Forest
+│       ├── unseen_attack.py                # Zero-day evaluation & open-set rejection
+│       ├── evaluate.py                     # Security-critical metric computation
+│       └── visualization.py                # Publication-grade plotting utilities
 │
-├── notebooks/                              # Interactive, Colab-ready Jupyter notebooks
-│   ├── 01_dataset_discovery.ipynb          # Automated dataset discovery & registration
-│   ├── 02_dataset_analysis.ipynb           # Data audit, leakage checks & distributions
-│   ├── 03_binary_classification.ipynb      # Binary attack detection training suite
-│   ├── 04_multiclass_classification.ipynb  # Multiclass known-attack attribution
-│   ├── 05_anomaly_detection.ipynb          # Deep Autoencoder & Isolation Forest
-│   ├── 06_unseen_attack_detection.ipynb    # Zero-day / held-out attack evaluation
-│   └── 07_final_comparison.ipynb           # Master benchmark comparison & selection
-│
-├── reports/                                # Generated reports, matrices, and plots
-│   ├── dataset_registry.csv                # Automated dataset catalog
-│   ├── dataset_registry.md                 # Detailed dataset documentation
-│   ├── dataset_comparison.csv              # Cross-dataset comparative matrix
-│   ├── final_model_comparison.csv          # Master 54-model benchmark results
-│   ├── final_dataset_selection.md          # Multi-criteria dataset selection report
-│   ├── final_experimental_report.md        # Complete academic experimental report
-│   └── plots/                              # Confusion matrices, ROC/PR curves & trade-offs
-│
-├── src/                                    # Modular, reusable Python package
-│   ├── data_loader.py                      # Robust data loaders with leakage prevention
-│   ├── preprocessing.py                    # Preprocessing pipelines fitted strictly on train
-│   ├── feature_selection.py                # Feature importance filtering
-│   ├── train_classical.py                  # Classical ML training suite
-│   ├── train_deep_learning.py              # PyTorch MLP, 1D-CNN, LSTM, CNN-LSTM
-│   ├── anomaly_detection.py                # PyTorch Deep Autoencoders & Isolation Forest
-│   ├── unseen_attack.py                    # Zero-day evaluation & open-set rejection
-│   ├── evaluate.py                         # Security-critical metric computation
-│   └── visualization.py                    # Publication-grade plotting utilities
-│
-├── results/                                # JSON evaluation metrics & CSV logs
-├── experiment_config.yaml                  # Reproducibility configuration & parameters
 ├── requirements.txt                        # Locked Python virtual environment dependencies
 └── .gitignore                              # Clean Git filter (excludes heavy binaries/data)
 ```
@@ -136,9 +138,9 @@ pip install -r requirements.txt
 
 ### 2. Running on Google Colab
 
-All notebooks in [`notebooks/`](notebooks/) are built to be self-contained and Colab-ready:
+All notebooks in [`phase_1/notebooks/`](phase_1/notebooks/) are built to be self-contained and Colab-ready:
 1. Open [Google Colab](https://colab.research.google.com/).
-2. Click **Upload** and select [`notebooks/07_final_comparison.ipynb`](notebooks/07_final_comparison.ipynb) (to view the benchmark) or [`notebooks/03_binary_classification.ipynb`](notebooks/03_binary_classification.ipynb) (to train models live).
+2. Click **Upload** and select [`phase_1/notebooks/07_final_comparison.ipynb`](phase_1/notebooks/07_final_comparison.ipynb) (to view the benchmark) or [`phase_1/notebooks/03_binary_classification.ipynb`](phase_1/notebooks/03_binary_classification.ipynb) (to train models live).
 3. Upload the required dataset CSV or mount your Google Drive using the first cell.
 4. Click **Runtime $\to$ Run all**.
 

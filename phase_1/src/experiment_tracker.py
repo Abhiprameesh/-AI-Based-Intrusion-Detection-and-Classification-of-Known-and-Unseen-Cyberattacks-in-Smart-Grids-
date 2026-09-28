@@ -1,9 +1,20 @@
 import os
-import pandas as pd
-from src.utils import ensure_dir
+import sys
 
-WORKSPACE = r"c:\ALLMLPROJ\MAINMLPROJS\MAJOR PROJECT"
-REPORTS_DIR = os.path.join(WORKSPACE, "reports")
+PHASE_1_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+ROOT_DIR = os.path.abspath(os.path.join(PHASE_1_DIR, ".."))
+for p in [PHASE_1_DIR, ROOT_DIR]:
+    if p not in sys.path:
+        sys.path.insert(0, p)
+
+import pandas as pd
+try:
+    from phase_1.src.utils import ensure_dir
+except ModuleNotFoundError:
+    from src.utils import ensure_dir
+
+WORKSPACE = os.environ.get("MAJOR_PROJECT_ROOT", ROOT_DIR)
+REPORTS_DIR = os.path.join(PHASE_1_DIR, "reports")
 
 MASTER_COMPARISON_CSV = os.path.join(REPORTS_DIR, "final_model_comparison.csv")
 DATASET_COMPARISON_CSV = os.path.join(REPORTS_DIR, "dataset_comparison.csv")

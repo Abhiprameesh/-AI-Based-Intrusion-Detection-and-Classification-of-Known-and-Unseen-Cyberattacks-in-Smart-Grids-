@@ -6,8 +6,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
-
-WORKSPACE = r"c:\ALLMLPROJ\MAINMLPROJS\MAJOR PROJECT"
+PHASE_1_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+ROOT_DIR = os.path.abspath(os.path.join(PHASE_1_DIR, ".."))
+WORKSPACE = os.environ.get("MAJOR_PROJECT_ROOT", ROOT_DIR)
 
 def clean_inf_and_nan(df, numeric_cols):
     """Replaces infinite values with NaN for proper imputation."""

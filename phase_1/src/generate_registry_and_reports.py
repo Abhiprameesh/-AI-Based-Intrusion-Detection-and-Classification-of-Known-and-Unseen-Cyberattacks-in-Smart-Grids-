@@ -4,9 +4,10 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-
-WORKSPACE = r"c:\ALLMLPROJ\MAINMLPROJS\MAJOR PROJECT"
-REPORTS_DIR = os.path.join(WORKSPACE, "reports")
+PHASE_1_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+ROOT_DIR = os.path.abspath(os.path.join(PHASE_1_DIR, ".."))
+WORKSPACE = os.environ.get("MAJOR_PROJECT_ROOT", ROOT_DIR)
+REPORTS_DIR = os.path.join(PHASE_1_DIR, "reports")
 PLOTS_DIR = os.path.join(REPORTS_DIR, "plots")
 os.makedirs(REPORTS_DIR, exist_ok=True)
 os.makedirs(PLOTS_DIR, exist_ok=True)

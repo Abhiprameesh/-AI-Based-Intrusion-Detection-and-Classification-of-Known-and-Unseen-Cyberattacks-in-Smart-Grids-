@@ -1,8 +1,9 @@
 import os
 import json
-
-WORKSPACE = r"c:\ALLMLPROJ\MAINMLPROJS\MAJOR PROJECT"
-NOTEBOOKS_DIR = os.path.join(WORKSPACE, "notebooks")
+PHASE_1_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+ROOT_DIR = os.path.abspath(os.path.join(PHASE_1_DIR, ".."))
+WORKSPACE = os.environ.get("MAJOR_PROJECT_ROOT", ROOT_DIR)
+NOTEBOOKS_DIR = os.path.join(PHASE_1_DIR, "notebooks")
 os.makedirs(NOTEBOOKS_DIR, exist_ok=True)
 
 def create_notebook(filename, cells):
