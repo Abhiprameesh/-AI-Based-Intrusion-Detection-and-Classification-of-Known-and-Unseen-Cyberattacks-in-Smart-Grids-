@@ -1,0 +1,190 @@
+{
+  "experiment": "Experiment 1: Frozen-Model Absolute Scoring",
+  "timestamp": "2026-10-24T10:44:13Z",
+  "num_samples": 1350,
+  "stages": {
+    "stage_1_binary_xgboost": {
+      "status": "COMPLETED",
+      "model": "XGBoost (Phase 1 Frozen)",
+      "preprocessor": "preprocessor_unscaled.joblib",
+      "accuracy": 0.6022222222222222,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "false_positive_rate": 0.0,
+      "true_negative_rate": 1.0,
+      "confusion_matrix": {
+        "tn": 813,
+        "fp": 0,
+        "fn": 537,
+        "tp": 0
+      },
+      "latency_per_sample_ms": 0.004799111112434831,
+      "per_scenario": {
+        "S0_benign_baseline": {
+          "num_samples": 150,
+          "num_attack_samples": 0,
+          "accuracy": 1.0,
+          "recall": null,
+          "false_positive_rate": 0.0
+        },
+        "S1_fdi_bss_scaling_0.5": {
+          "num_samples": 150,
+          "num_attack_samples": 71,
+          "accuracy": 0.5266666666666666,
+          "recall": 0.0,
+          "false_positive_rate": 0.0
+        },
+        "S2_fdi_substation_bias_5kw": {
+          "num_samples": 150,
+          "num_attack_samples": 71,
+          "accuracy": 0.5266666666666666,
+          "recall": 0.0,
+          "false_positive_rate": 0.0
+        },
+        "S3_industroyer_pv_trip": {
+          "num_samples": 150,
+          "num_attack_samples": 71,
+          "accuracy": 0.5266666666666666,
+          "recall": 0.0,
+          "false_positive_rate": 0.0
+        },
+        "S4_industroyer_bss_forced_discharge": {
+          "num_samples": 150,
+          "num_attack_samples": 71,
+          "accuracy": 0.5266666666666666,
+          "recall": 0.0,
+          "false_positive_rate": 0.0
+        },
+        "S5_load_b_telemetry_freeze": {
+          "num_samples": 150,
+          "num_attack_samples": 71,
+          "accuracy": 0.5266666666666666,
+          "recall": 0.0,
+          "false_positive_rate": 0.0
+        },
+        "S6_unseen_stealthy_ramp_fdi": {
+          "num_samples": 150,
+          "num_attack_samples": 91,
+          "accuracy": 0.3933333333333333,
+          "recall": 0.0,
+          "false_positive_rate": 0.0
+        },
+        "S7_unseen_coordinated_masking": {
+          "num_samples": 150,
+          "num_attack_samples": 91,
+          "accuracy": 0.3933333333333333,
+          "recall": 0.0,
+          "false_positive_rate": 0.0
+        },
+        "S8_benign_cloud_cover_shading": {
+          "num_samples": 150,
+          "num_attack_samples": 0,
+          "accuracy": 1.0,
+          "recall": null,
+          "false_positive_rate": 0.0
+        }
+      },
+      "per_category": {
+        "benign": {
+          "num_samples": 150,
+          "accuracy": 1.0,
+          "f1": 0.0
+        },
+        "known_attack": {
+          "num_samples": 750,
+          "accuracy": 0.5266666666666666,
+          "f1": 0.0
+        },
+        "unseen_attack": {
+          "num_samples": 300,
+          "accuracy": 0.3933333333333333,
+          "f1": 0.0
+        },
+        "benign_disturbance": {
+          "num_samples": 150,
+          "accuracy": 1.0,
+          "f1": 0.0
+        }
+      },
+      "domain_shift_notice": "Features conform to Phase 1 contract, but domain shift between testbed empirical telemetry and OpenDSS steady-state solver affects confidence."
+    },
+    "stage_2_known_attack_multiclass": {
+      "status": "COMPLETED",
+      "model": "Random Forest Multiclass (Phase 1 Frozen)",
+      "supported_samples": 1097,
+      "excluded_samples": 253,
+      "exclusions_detail": "Excluded telemetry_freeze (S5, 71 samples) and unseen_stealthy_attack (S6 & S7, 182 samples) because they were not part of the 4 training classes.",
+      "overall_accuracy": 0.7766636280765725,
+      "macro_f1": 0.5066619869534122,
+      "weighted_f1": 0.7227386469920964,
+      "classification_report": {
+        "benign (0)": {
+          "precision": 0.8034188034188035,
+          "recall": 0.9249692496924969,
+          "f1-score": 0.8599199542595769,
+          "support": 813.0
+        },
+        "industroyer (1)": {
+          "precision": 0.6211180124223602,
+          "recall": 0.704225352112676,
+          "f1-score": 0.6600660066006601,
+          "support": 142.0
+        },
+        "mitm_fdi (2)": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 142.0
+        },
+        "accuracy": 0.7766636280765725,
+        "macro avg": {
+          "precision": 0.47484560528038794,
+          "recall": 0.543064867268391,
+          "f1-score": 0.5066619869534122,
+          "support": 1097.0
+        },
+        "weighted avg": {
+          "precision": 0.6758233773413512,
+          "recall": 0.7766636280765725,
+          "f1-score": 0.7227386469920964,
+          "support": 1097.0
+        }
+      },
+      "confusion_matrix_4x4": [
+        [
+          752,
+          61,
+          0,
+          0
+        ],
+        [
+          42,
+          100,
+          0,
+          0
+        ],
+        [
+          142,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "latency_per_sample_ms": 0.03087329079181384
+    },
+    "stage_3_unseen_autoencoder": {
+      "status": "BLOCKED",
+      "reason": "Missing trained artifact: 'phase_1/results/data4cyber_dataset/anomaly/Autoencoder.pt'.",
+      "evidence": "Phase 1 generated 'unseen_attack/unseen_attack_MitM_FDI.json' with threshold 0.427601, but train_deep_learning did not serialize the trained PyTorch model weights to disk for Data4Cyber. Pursuant to user constraints, retraining or manufacturing weights is strictly forbidden.",
+      "recorded_phase1_threshold": 0.42760130763053894,
+      "blocker_action": "Reported as blocked without fabricating artifacts."
+    }
+  }
+}

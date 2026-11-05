@@ -5,7 +5,10 @@
 venv/
 env/
 ENV/
+env.bak/
+venv.bak/
 __pycache__/
+**/__pycache__/
 *.py[cod]
 *$py.class
 *.so
@@ -27,7 +30,7 @@ wheels/
 *.egg
 
 # ==============================================================================
-# Jupyter & IDE Metadata
+# Jupyter, IDE & Operating System Artifacts
 # ==============================================================================
 .ipynb_checkpoints/
 .vscode/
@@ -38,6 +41,15 @@ wheels/
 Thumbs.db
 ehthumbs.db
 desktop.ini
+
+# ==============================================================================
+# Environment & Local Secrets
+# ==============================================================================
+.env
+*.env
+.env.*
+.streamlit/secrets.toml
+.streamlit/*.local
 
 # ==============================================================================
 # Large Serialized Model Checkpoints (>25MB)
@@ -88,10 +100,60 @@ desktop.ini
 *.rar
 
 # ==============================================================================
-# Temporary and Cache Files
+# Temporary, Log & Cache Files
 # ==============================================================================
 *.log
+**/*.log
 *.tmp
+**/*.tmp
 *.bak
+**/*.bak
 *.swp
+**/*.swp
 *~
+tmp/
+**/tmp/
+temp/
+**/temp/
+
+# ==============================================================================
+# Agent, Scratch & Internal Execution Artifacts
+# ==============================================================================
+scratch/
+**/scratch/
+.system_generated/
+**/.system_generated/
+.gemini/
+**/.gemini/
+
+# ==============================================================================
+# Testing & Code Coverage Artifacts
+# ==============================================================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ==============================================================================
+# Research, Milestone & Audit Reports
+# (Keep audit reports, milestone evaluations, and generated analyses out of Git)
+# ==============================================================================
+reports/
+**/reports/
+*.report.md
+*_report.md
+*report*.md
+*audit*.md
+reports_archive/
+
+# ==============================================================================
+# Intermediate Experiment Dumps & Candidate Tuning Runs
+# (Preserve canonical milestone4 baseline while excluding intermediate candidate dumps)
+# ==============================================================================
+simulation/results/milestone4/audit_truncated_predictions_45rows.csv
+simulation/results/milestone4_1_audit_data.json
+simulation/results/milestone4_3/
+simulation/results/milestone4_4/
+simulation/results/milestone4_5/candidates/
+simulation/results/milestone4_5/plots/

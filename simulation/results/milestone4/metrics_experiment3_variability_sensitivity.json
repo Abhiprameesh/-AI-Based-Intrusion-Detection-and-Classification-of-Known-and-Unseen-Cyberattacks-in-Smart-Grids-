@@ -1,0 +1,28 @@
+{
+  "experiment": "Experiment 3: Variability Sensitivity Analysis",
+  "timestamp": "2026-10-18T21:45:55Z",
+  "deterministic_baseline": {
+    "initial_soc": 0.2,
+    "noise": "None",
+    "f1_score": 0.0,
+    "recall": 0.0,
+    "false_positive_rate": 0.0
+  },
+  "perturbation_1_sensor_noise": {
+    "description": "Additive Gaussian noise matching Janitza Class 0.2S: V(sigma=0.15V), I(sigma=0.03A), P(sigma=15W)",
+    "f1_score": 0.0,
+    "recall": 0.0,
+    "false_positive_rate": 0.0,
+    "delta_f1": 0.0,
+    "delta_fpr": 0.0
+  },
+  "perturbation_2_operating_point_soc75": {
+    "description": "Operating point shift: initial battery SOC set to 0.75 (standard reserve) vs 0.20 (Data4Cyber match)",
+    "f1_score": 0.0,
+    "recall": 0.0,
+    "false_positive_rate": 0.0,
+    "delta_f1": 0.0,
+    "delta_fpr": 0.0,
+    "domain_shift_impact": "At SOC=0.75, battery SOC is +6.1 sigma above Phase 1 training mean, triggering persistent anomaly flagging in tree splits."
+  }
+}

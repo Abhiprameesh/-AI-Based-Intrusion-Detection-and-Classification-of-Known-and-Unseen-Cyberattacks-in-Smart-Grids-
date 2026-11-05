@@ -1,0 +1,59 @@
+{
+  "artifact_name": "Data4Cyber Deep Autoencoder (Recovery v1)",
+  "created_at_utc": "2026-10-24T12:30:16Z",
+  "purpose": "Milestone 4.3 Workstream D Reproducible Recovery",
+  "weights_file": {
+    "relative_path": "phase_1/results/data4cyber_dataset/anomaly/recovery_v1/Autoencoder.pt",
+    "absolute_path": "C:\\ALLMLPROJ\\MAINMLPROJS\\MAJOR PROJECT\\phase_1\\results\\data4cyber_dataset\\anomaly\\recovery_v1\\Autoencoder.pt",
+    "sha256": "8df8b7333d93ff58d8d4dba44dc60cd09e0fc2558e7191a837942799fba4936c",
+    "bytes": 112347
+  },
+  "scaler_used": {
+    "relative_path": "phase_1/results/data4cyber_dataset/binary/models/preprocessor_scaled.joblib",
+    "sha256": "d80f1484077092c1ba64c9ceec793041e8b9cf037b4f9cd101b6d2b236608ac5"
+  },
+  "environment": {
+    "python_version": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "pytorch_version": "2.14.0+cpu",
+    "numpy_version": "2.5.3",
+    "sklearn_version": "1.9.1",
+    "cuda_available": false,
+    "device_used": "cpu"
+  },
+  "hyperparameters": {
+    "architecture": "Autoencoder(150 -> 64 -> 32 -> 16 -> 32 -> 64 -> 150)",
+    "in_features": 150,
+    "bottleneck_dim": 16,
+    "epochs": 25,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "optimizer": "Adam",
+    "loss_function": "MSELoss",
+    "random_seed": 42
+  },
+  "data_splits": {
+    "total_train": 10047,
+    "total_val": 2153,
+    "total_test": 2154,
+    "benign_train_samples": 1259,
+    "benign_val_samples": 269,
+    "benign_test_samples": 270,
+    "known_attack_test_samples": 1074,
+    "unseen_attack_test_samples": 810,
+    "in_features": 150
+  },
+  "training_summary": {
+    "duration_seconds": 3.6258974075317383,
+    "best_val_loss": 0.039464082568883896,
+    "final_train_loss": 0.04815206956118345
+  },
+  "threshold": {
+    "calculated_val_p99": 0.3640202581882477,
+    "historical_p99": 0.42760130763053894,
+    "difference_percent": 14.869236437702222
+  },
+  "reload_validation_passed": true
+}

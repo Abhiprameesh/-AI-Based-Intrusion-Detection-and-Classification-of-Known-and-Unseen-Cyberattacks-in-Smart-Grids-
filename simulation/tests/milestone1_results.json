@@ -1,0 +1,190 @@
+{
+  "snapshot_test": {
+    "test_name": "operating_point_snapshot",
+    "solver_converged": true,
+    "power_balance": {
+      "is_balanced": true,
+      "residual_watts": 1.4709257811773568e-08,
+      "breakdown_watts": {
+        "p_substation_reported_w": -4775.655603869105,
+        "p_pv_inverter_w": -19999.999999999407,
+        "p_bss_inverter_w": 199.99999999995896,
+        "p_load_a_w": 6999.999999997879,
+        "p_load_b_w": 7999.999999997418,
+        "p_feeder_losses_w": 24.344396149756562,
+        "busbar_residual_w": 4.503817763179541e-09,
+        "conservation_residual_w": 1.4709257811773568e-08
+      }
+    },
+    "voltage_checks": {
+      "Substation-AC-Meter": {
+        "uln1_v": 230.78110639157168,
+        "uln2_v": 230.78110641412198,
+        "uln3_v": 230.78110641412277,
+        "in_spec": true
+      },
+      "PV-Inverter-AC-Meter": {
+        "uln1_v": 230.99754764593087,
+        "uln2_v": 230.99754766842736,
+        "uln3_v": 230.99754766848577,
+        "in_spec": true
+      },
+      "BSS-Inverter-AC-Meter": {
+        "uln1_v": 230.77893983341613,
+        "uln2_v": 230.77893985596697,
+        "uln3_v": 230.77893985596725,
+        "in_spec": true
+      },
+      "Load-A-AC-Meter": {
+        "uln1_v": 230.69983179179187,
+        "uln2_v": 230.69983181436518,
+        "uln3_v": 230.69983181434614,
+        "in_spec": true
+      },
+      "Load-B-AC-Meter": {
+        "uln1_v": 230.6871840153222,
+        "uln2_v": 230.68718403789953,
+        "uln3_v": 230.6871840378776,
+        "in_spec": true
+      }
+    },
+    "sign_conventions_valid": true,
+    "battery_soc_percent": 75.0,
+    "pv_active_power_watts": -19999.999999999407,
+    "load_a_active_power_watts": 6999.999999997879,
+    "load_b_active_power_watts": 7999.999999997418,
+    "substation_active_power_watts": -4775.655603869105
+  },
+  "timeseries_test": {
+    "test_name": "short_timeseries_10s",
+    "all_steps_converged": true,
+    "all_steps_power_balanced": true,
+    "soc_charging_derivative_positive": true,
+    "soc_discharging_derivative_negative": true,
+    "soc_history": [
+      75.0,
+      75.0,
+      75.0,
+      75.0,
+      75.0024000096646,
+      75.0048000096648,
+      75.0072000096648,
+      75.0039901040864,
+      75.0007802275437,
+      74.9975703510005
+    ],
+    "step_logs": [
+      {
+        "step": 0,
+        "bss_state": "IDLING",
+        "converged": true,
+        "soc_percent": 75.0,
+        "residual_w": 0.0003779284397751326,
+        "p_sub_w": -4775.65657594979,
+        "p_pv_w": -20000.000024953093,
+        "p_bss_w": 199.99999567706215,
+        "substation_v_ln_v": 230.78110641250515
+      },
+      {
+        "step": 1,
+        "bss_state": "IDLING",
+        "converged": true,
+        "soc_percent": 75.0,
+        "residual_w": 1.4709257811773568e-08,
+        "p_sub_w": -4775.655603869105,
+        "p_pv_w": -19999.999999999407,
+        "p_bss_w": 199.99999999995896,
+        "substation_v_ln_v": 230.78110639157168
+      },
+      {
+        "step": 2,
+        "bss_state": "IDLING",
+        "converged": true,
+        "soc_percent": 75.0,
+        "residual_w": 4.769390216097236e-09,
+        "p_sub_w": -4775.655603861589,
+        "p_pv_w": -20000.0,
+        "p_bss_w": 200.00000000000006,
+        "substation_v_ln_v": 230.7811063915715
+      },
+      {
+        "step": 3,
+        "bss_state": "IDLING",
+        "converged": true,
+        "soc_percent": 75.0,
+        "residual_w": 4.769390216097236e-09,
+        "p_sub_w": -4775.655603861589,
+        "p_pv_w": -20000.0,
+        "p_bss_w": 200.00000000000006,
+        "substation_v_ln_v": 230.7811063915715
+      },
+      {
+        "step": 4,
+        "bss_state": "CHARGING",
+        "converged": true,
+        "soc_percent": 75.0024000096646,
+        "residual_w": 0.037022218412943175,
+        "p_sub_w": 25.563298899790965,
+        "p_pv_w": -20000.088659042838,
+        "p_bss_w": 5000.019329131096,
+        "substation_v_ln_v": 230.7367272263673
+      },
+      {
+        "step": 5,
+        "bss_state": "CHARGING",
+        "converged": true,
+        "soc_percent": 75.0048000096648,
+        "residual_w": 3.2593716063900047e-06,
+        "p_sub_w": 25.52636719090877,
+        "p_pv_w": -20000.00000077883,
+        "p_bss_w": 5000.000000494233,
+        "substation_v_ln_v": 230.73673255318027
+      },
+      {
+        "step": 6,
+        "bss_state": "CHARGING",
+        "converged": true,
+        "soc_percent": 75.0072000096648,
+        "residual_w": 7.738520935163251e-10,
+        "p_sub_w": 25.52636369057187,
+        "p_pv_w": -19999.99999999991,
+        "p_bss_w": 4999.999999999968,
+        "substation_v_ln_v": 230.73673255304502
+      },
+      {
+        "step": 7,
+        "bss_state": "DISCHARGING",
+        "converged": true,
+        "soc_percent": 75.0039901040864,
+        "residual_w": 0.24635056854458526,
+        "p_sub_w": -9974.789262132803,
+        "p_pv_w": -20000.18104405161,
+        "p_bss_w": -5000.047037074839,
+        "substation_v_ln_v": 230.82871952425475
+      },
+      {
+        "step": 8,
+        "bss_state": "DISCHARGING",
+        "converged": true,
+        "soc_percent": 75.0007802275437,
+        "residual_w": 4.530880687525496e-06,
+        "p_sub_w": -9974.495050133719,
+        "p_pv_w": -19999.99999771376,
+        "p_bss_w": -4999.999999153943,
+        "substation_v_ln_v": 230.82871201831966
+      },
+      {
+        "step": 9,
+        "bss_state": "DISCHARGING",
+        "converged": true,
+        "soc_percent": 74.9975703510005,
+        "residual_w": 8.452843758277595e-09,
+        "p_sub_w": -9974.495052158487,
+        "p_pv_w": -19999.999999999884,
+        "p_bss_w": -4999.99999999998,
+        "substation_v_ln_v": 230.82871201886357
+      }
+    ]
+  },
+  "overall_pass": true
+}

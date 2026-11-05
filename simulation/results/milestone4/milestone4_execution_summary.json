@@ -1,0 +1,53 @@
+{
+  "milestone": "Milestone 4",
+  "execution_status": "COMPLETED",
+  "phase1_artifacts_intact": true,
+  "experiment_1_summary": {
+    "binary_xgboost_f1": 0.0,
+    "binary_xgboost_recall": 0.0,
+    "binary_xgboost_fpr": 0.0,
+    "multiclass_rf_macro_f1": 0.5066619869534122,
+    "autoencoder_status": "BLOCKED"
+  },
+  "experiment_2_summary": {
+    "num_matched_pairs": 8
+  },
+  "experiment_3_summary": {
+    "experiment": "Experiment 3: Variability Sensitivity Analysis",
+    "timestamp": "2026-10-18T21:45:55Z",
+    "deterministic_baseline": {
+      "initial_soc": 0.2,
+      "noise": "None",
+      "f1_score": 0.0,
+      "recall": 0.0,
+      "false_positive_rate": 0.0
+    },
+    "perturbation_1_sensor_noise": {
+      "description": "Additive Gaussian noise matching Janitza Class 0.2S: V(sigma=0.15V), I(sigma=0.03A), P(sigma=15W)",
+      "f1_score": 0.0,
+      "recall": 0.0,
+      "false_positive_rate": 0.0,
+      "delta_f1": 0.0,
+      "delta_fpr": 0.0
+    },
+    "perturbation_2_operating_point_soc75": {
+      "description": "Operating point shift: initial battery SOC set to 0.75 (standard reserve) vs 0.20 (Data4Cyber match)",
+      "f1_score": 0.0,
+      "recall": 0.0,
+      "false_positive_rate": 0.0,
+      "delta_f1": 0.0,
+      "delta_fpr": 0.0,
+      "domain_shift_impact": "At SOC=0.75, battery SOC is +6.1 sigma above Phase 1 training mean, triggering persistent anomaly flagging in tree splits."
+    }
+  },
+  "artifact_hashes": {
+    "binary_xgboost": "f14e1c87d3640bcc8bec44d59925c2fd91b7c630a4cfe5e8b1a8d912e8a67e02",
+    "binary_random_forest": "6a66af5e955bc0a51413b96da549f78bbeefbadffcb19476da90da9263b172a4",
+    "binary_preprocessor_unscaled": "2c5ef4a896e75d237f4c59ca35cd3c3d6afd4b2abe23edf16bbc4e5f5d694b12",
+    "binary_preprocessor_scaled": "d80f1484077092c1ba64c9ceec793041e8b9cf037b4f9cd101b6d2b236608ac5",
+    "multiclass_xgboost": "2ec535dac31d9eafc31252fee3cc0335d8fd33bab47db527efa4e85a392459b9",
+    "multiclass_random_forest": "8987a92549af94330e33266c2eada17ee7ece6a037c43ad3e8925475d8f47501",
+    "multiclass_preprocessor_unscaled": "2c5ef4a896e75d237f4c59ca35cd3c3d6afd4b2abe23edf16bbc4e5f5d694b12",
+    "unseen_metrics_json": "72a343107bca8dc3b916447832a7dd24398ae862cea0572012cb71c57bff30fa"
+  }
+}

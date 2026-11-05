@@ -1,0 +1,46 @@
+{
+  "calculated_threshold": 0.3640202581882477,
+  "historical_threshold": 0.42760130763053894,
+  "absolute_difference": 0.06358104944229126,
+  "percent_difference": 14.869236437702222,
+  "validation_error_distribution": {
+    "count": 269,
+    "min": 0.0055715832859277725,
+    "p25": 0.013130513951182365,
+    "median": 0.02209015190601349,
+    "mean": 0.039464082568883896,
+    "p75": 0.034723736345767975,
+    "p95": 0.12601402401924133,
+    "p99": 0.3640202581882477,
+    "max": 0.5868434309959412,
+    "std": 0.06928909569978714
+  },
+  "historical_test_evaluation_with_new_threshold": {
+    "approach": "Autoencoder_Residual_Thresholding",
+    "unseen_attack_name": "MitM_FDI_Recovery",
+    "threshold": 0.3640202581882477,
+    "unseen_attack_detection_rate": 0.48271604938271606,
+    "known_attack_detection_rate": 0.419925512104283,
+    "false_positive_rate_on_normal": 0.007407407407407408,
+    "overall_accuracy": 0.5153203342618384,
+    "overall_f1": 0.6173020527859238,
+    "overall_roc_auc": 0.9861641896673743,
+    "num_normal_test": 270,
+    "num_known_test": 1074,
+    "num_unseen_test": 810
+  },
+  "historical_test_evaluation_with_historical_threshold": {
+    "approach": "Autoencoder_Residual_Thresholding",
+    "unseen_attack_name": "MitM_FDI_HistoricalThresh",
+    "threshold": 0.42760130763053894,
+    "unseen_attack_detection_rate": 0.42098765432098767,
+    "known_attack_detection_rate": 0.2951582867783985,
+    "false_positive_rate_on_normal": 0.0,
+    "overall_accuracy": 0.4308263695450325,
+    "overall_f1": 0.5177025963808025,
+    "overall_roc_auc": 0.9861641896673743,
+    "num_normal_test": 270,
+    "num_known_test": 1074,
+    "num_unseen_test": 810
+  }
+}

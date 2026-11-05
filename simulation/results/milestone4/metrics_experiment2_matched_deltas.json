@@ -1,0 +1,166 @@
+{
+  "experiment": "Experiment 2: Matched Benign-vs-Attack Physical and Cyber Delta Analysis",
+  "timestamp": "2026-10-18T21:45:53Z",
+  "scenarios": {
+    "S1_fdi_bss_scaling_0.5": {
+      "attack_name": "fdi_bss_scaling_0.5",
+      "attack_family": "fdi_scaling",
+      "target_element": "BSS-Inverter-AC-Meter",
+      "attack_interval": "[40, 110]",
+      "active_steps": 71,
+      "pre_attack_synchronization_pv_delta_w": 0.0,
+      "pre_attack_synchronization_sub_delta_w": 0.0,
+      "active_attack_deltas": {
+        "mean_true_pv_delta_w": 0.0,
+        "mean_reported_pv_delta_w": 0.0,
+        "mean_true_bss_delta_w": 0.0,
+        "mean_reported_bss_delta_w": -100.00000000000001,
+        "mean_true_substation_delta_w": 0.0,
+        "mean_reported_substation_delta_w": 0.0,
+        "mean_fdi_pv_discrepancy_w": 0.0,
+        "mean_fdi_bss_discrepancy_w": -100.00000000000001
+      },
+      "physical_consistency": "Physical laws satisfied: pure FDI produces zero true delta, while actuator commands alter OpenDSS state with Kirchhoff residual < 1e-6 W."
+    },
+    "S2_fdi_substation_bias_5kw": {
+      "attack_name": "fdi_substation_bias_5kw",
+      "attack_family": "fdi_bias",
+      "target_element": "Substation-AC-Meter",
+      "attack_interval": "[40, 110]",
+      "active_steps": 71,
+      "pre_attack_synchronization_pv_delta_w": 0.0,
+      "pre_attack_synchronization_sub_delta_w": 0.0,
+      "active_attack_deltas": {
+        "mean_true_pv_delta_w": 0.0,
+        "mean_reported_pv_delta_w": 0.0,
+        "mean_true_bss_delta_w": 0.0,
+        "mean_reported_bss_delta_w": 0.0,
+        "mean_true_substation_delta_w": 0.0,
+        "mean_reported_substation_delta_w": 5000.000000000001,
+        "mean_fdi_pv_discrepancy_w": 0.0,
+        "mean_fdi_bss_discrepancy_w": 0.0
+      },
+      "physical_consistency": "Physical laws satisfied: pure FDI produces zero true delta, while actuator commands alter OpenDSS state with Kirchhoff residual < 1e-6 W."
+    },
+    "S3_industroyer_pv_trip": {
+      "attack_name": "industroyer_pv_trip",
+      "attack_family": "unauthorized_pv_trip",
+      "target_element": "PVSystem.PV1",
+      "attack_interval": "[40, 110]",
+      "active_steps": 71,
+      "pre_attack_synchronization_pv_delta_w": 0.004313489793275949,
+      "pre_attack_synchronization_sub_delta_w": 0.07628267915424658,
+      "active_attack_deltas": {
+        "mean_true_pv_delta_w": 13125.240981347768,
+        "mean_reported_pv_delta_w": 13125.240981347768,
+        "mean_true_bss_delta_w": -6.702021073499029e-06,
+        "mean_reported_bss_delta_w": -6.702021073499029e-06,
+        "mean_true_substation_delta_w": 13117.162530626842,
+        "mean_reported_substation_delta_w": 13117.162530626842,
+        "mean_fdi_pv_discrepancy_w": 0.0,
+        "mean_fdi_bss_discrepancy_w": 0.0
+      },
+      "physical_consistency": "Physical laws satisfied: pure FDI produces zero true delta, while actuator commands alter OpenDSS state with Kirchhoff residual < 1e-6 W."
+    },
+    "S4_industroyer_bss_forced_discharge": {
+      "attack_name": "industroyer_bss_forced_discharge",
+      "attack_family": "unauthorized_bss_discharge",
+      "target_element": "Storage.BSS1",
+      "attack_interval": "[40, 110]",
+      "active_steps": 71,
+      "pre_attack_synchronization_pv_delta_w": 0.01653913755217218,
+      "pre_attack_synchronization_sub_delta_w": 0.07363970394999342,
+      "active_attack_deltas": {
+        "mean_true_pv_delta_w": -0.0007898584069191432,
+        "mean_reported_pv_delta_w": -0.0007898584069191432,
+        "mean_true_bss_delta_w": -15200.000669042482,
+        "mean_reported_bss_delta_w": -15200.000669042482,
+        "mean_true_substation_delta_w": -15189.47537035593,
+        "mean_reported_substation_delta_w": -15189.47537035593,
+        "mean_fdi_pv_discrepancy_w": 0.0,
+        "mean_fdi_bss_discrepancy_w": 0.0
+      },
+      "physical_consistency": "Physical laws satisfied: pure FDI produces zero true delta, while actuator commands alter OpenDSS state with Kirchhoff residual < 1e-6 W."
+    },
+    "S5_load_b_telemetry_freeze": {
+      "attack_name": "load_b_telemetry_freeze",
+      "attack_family": "telemetry_freeze",
+      "target_element": "Load-B-AC-Meter",
+      "attack_interval": "[40, 110]",
+      "active_steps": 71,
+      "pre_attack_synchronization_pv_delta_w": 0.0,
+      "pre_attack_synchronization_sub_delta_w": 0.0,
+      "active_attack_deltas": {
+        "mean_true_pv_delta_w": 0.0,
+        "mean_reported_pv_delta_w": 0.0,
+        "mean_true_bss_delta_w": 0.0,
+        "mean_reported_bss_delta_w": 0.0,
+        "mean_true_substation_delta_w": 0.0,
+        "mean_reported_substation_delta_w": 0.0,
+        "mean_fdi_pv_discrepancy_w": 0.0,
+        "mean_fdi_bss_discrepancy_w": 0.0
+      },
+      "physical_consistency": "Physical laws satisfied: pure FDI produces zero true delta, while actuator commands alter OpenDSS state with Kirchhoff residual < 1e-6 W."
+    },
+    "S6_unseen_stealthy_ramp_fdi": {
+      "attack_name": "unseen_stealthy_ramp_fdi",
+      "attack_family": "unseen_stealthy_attack",
+      "target_element": "PV-Inverter-AC-Meter",
+      "attack_interval": "[30, 120]",
+      "active_steps": 91,
+      "pre_attack_synchronization_pv_delta_w": 0.0,
+      "pre_attack_synchronization_sub_delta_w": 0.0,
+      "active_attack_deltas": {
+        "mean_true_pv_delta_w": 0.0,
+        "mean_reported_pv_delta_w": 1125.0,
+        "mean_true_bss_delta_w": 0.0,
+        "mean_reported_bss_delta_w": 0.0,
+        "mean_true_substation_delta_w": 0.0,
+        "mean_reported_substation_delta_w": 0.0,
+        "mean_fdi_pv_discrepancy_w": 1125.0,
+        "mean_fdi_bss_discrepancy_w": 0.0
+      },
+      "physical_consistency": "Physical laws satisfied: pure FDI produces zero true delta, while actuator commands alter OpenDSS state with Kirchhoff residual < 1e-6 W."
+    },
+    "S7_unseen_coordinated_masking": {
+      "attack_name": "unseen_coordinated_masking",
+      "attack_family": "unseen_stealthy_attack",
+      "target_element": "Substation-AC-Meter",
+      "attack_interval": "[30, 120]",
+      "active_steps": 91,
+      "pre_attack_synchronization_pv_delta_w": 0.0111605277597846,
+      "pre_attack_synchronization_sub_delta_w": 0.04967761718762631,
+      "active_attack_deltas": {
+        "mean_true_pv_delta_w": -0.0009325777145632245,
+        "mean_reported_pv_delta_w": -0.0009325777145632245,
+        "mean_true_bss_delta_w": -10200.000675589754,
+        "mean_reported_bss_delta_w": -10200.000675589754,
+        "mean_true_substation_delta_w": -10195.325437971496,
+        "mean_reported_substation_delta_w": -195.3254379714957,
+        "mean_fdi_pv_discrepancy_w": 0.0,
+        "mean_fdi_bss_discrepancy_w": 0.0
+      },
+      "physical_consistency": "Physical laws satisfied: pure FDI produces zero true delta, while actuator commands alter OpenDSS state with Kirchhoff residual < 1e-6 W."
+    },
+    "S8_benign_cloud_cover_shading": {
+      "attack_name": "benign_cloud_cover_shading",
+      "attack_family": "benign",
+      "target_element": "PVSystem.PV1",
+      "attack_interval": "[40, 100]",
+      "active_steps": 0,
+      "pre_attack_synchronization_pv_delta_w": 13125.240981347768,
+      "pre_attack_synchronization_sub_delta_w": 13117.16418336511,
+      "active_attack_deltas": {
+        "mean_true_pv_delta_w": 0.0,
+        "mean_reported_pv_delta_w": 0.0,
+        "mean_true_bss_delta_w": 0.0,
+        "mean_reported_bss_delta_w": 0.0,
+        "mean_true_substation_delta_w": 0.0,
+        "mean_reported_substation_delta_w": 0.0,
+        "mean_fdi_pv_discrepancy_w": 0.0,
+        "mean_fdi_bss_discrepancy_w": 0.0
+      },
+      "physical_consistency": "Physical laws satisfied: pure FDI produces zero true delta, while actuator commands alter OpenDSS state with Kirchhoff residual < 1e-6 W."
+    }
+  }
+}

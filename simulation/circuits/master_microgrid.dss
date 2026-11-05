@@ -1,0 +1,42 @@
+// OpenDSS Circuit: Data4Cyber 5-Bus Distribution Microgrid
+// Matches the electrical topology of the Data4Cyber DER benchmark:
+// 1. Medium-to-Low Voltage Substation Transformer (20 kV Delta -> 0.4 kV Wye-Grounded)
+// 2. 3-Phase Low-Voltage Distribution Feeders (400V L-L / 230V L-N)
+// 3. 36 kVA Fronius PV Inverter equivalent (PVSystem.PV1)
+// 4. 25 kVA / 50 kWh SMA Sunny Island BESS equivalent (Storage.BSS1)
+// 5. Industrial/Commercial Load A (7.0 kW, 1.5 kVAR)
+// 6. Industrial/Commercial Load B (8.0 kW, 2.0 kVAR)
+
+Clear
+
+// 1. Grid Slack Bus (20.0 kV Medium Voltage Interconnection)
+New Circuit.Data4CyberMicrogrid basekv=20.0 pu=1.00 phases=3 bus1=GridSlackBus
+
+// 2. Secondary Substation Distribution Transformer
+// Primary: 20 kV Delta | Secondary: 0.4 kV Wye (230V Line-Neutral, 400V Line-Line)
+New Transformer.Substation Phases=3 Windings=2 XHL=2.5 Wdg=1 Bus=GridSlackBus kV=20.0 kVA=100 Conn=Delta Wdg=2 Bus=SubstationBus kV=0.4 kVA=100 Conn=Wye
+
+// 3. Distribution Feeders (400V Underground Multiphase Cables)
+// Low-voltage copper cables: R1 = 0.15 Ohm/km, X1 = 0.05 Ohm/km, Length = 50 meters
+New Line.FeederPV    Phases=3 Bus1=SubstationBus Bus2=PVBus    Length=0.05 Units=km R1=0.15 X1=0.05
+New Line.FeederBSS   Phases=3 Bus1=SubstationBus Bus2=BSSBus   Length=0.05 Units=km R1=0.15 X1=0.05
+New Line.FeederLoadA Phases=3 Bus1=SubstationBus Bus2=LoadABus Length=0.05 Units=km R1=0.15 X1=0.05
+New Line.FeederLoadB Phases=3 Bus1=SubstationBus Bus2=LoadBBus Length=0.05 Units=km R1=0.15 X1=0.05
+
+// 4. Distributed Energy Resources (DERs)
+// Photovoltaic Inverter: 36 kVA rated, 20 kW peak rating at irradiance=1.0, pf = 1.0 (unity)
+New PVSystem.PV1 Phases=3 Bus1=PVBus kV=0.4 kVA=36 pmpp=20.0 irradiance=1.0 pf=1.0
+
+// Battery Energy Storage System (BESS): 25 kVA inverter, 20 kW rated power, 50 kWh capacity, initial 75% SoC
+New Storage.BSS1 Phases=3 Bus1=BSSBus kV=0.4 kVA=25 kWrated=20 kWhrated=50 %stored=75 %reserve=20 state=IDLING %EffCharge=90 %EffDischarge=90
+
+// 5. Distribution Loads
+// Industrial Load A: 7.0 kW active power, 1.5 kVAR inductive reactive power (pf ~ 0.978)
+New Load.LoadA Phases=3 Bus1=LoadABus kV=0.4 kW=7.0 kvar=1.5 model=1
+
+// Industrial Load B: 8.0 kW active power, 2.0 kVAR inductive reactive power (pf ~ 0.970)
+New Load.LoadB Phases=3 Bus1=LoadBBus kV=0.4 kW=8.0 kvar=2.0 model=1
+
+// Voltage bases for per-unit calculations
+Set VoltageBases=[20.0, 0.4]
+CalcVoltageBases

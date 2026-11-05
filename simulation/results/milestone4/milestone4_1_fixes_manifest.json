@@ -1,0 +1,32 @@
+{
+  "milestone": "Milestone 4.1 Fixes",
+  "status": "VALIDATED",
+  "predictions_csv": {
+    "path": "simulation/results/milestone4/predictions_binary_and_multiclass.csv",
+    "row_count": 1350,
+    "sha256": "eec818a78a68aa59b6f2b77a96021f710050ad52552688984c8c3dfcbc42692b",
+    "alignment_verified": true
+  },
+  "preserved_truncated_audit_csv": {
+    "path": "simulation/results/milestone4/audit_truncated_predictions_45rows.csv",
+    "row_count": 45,
+    "sha256": "05f8e3c4bb245618171613e119878a03ab861046040ed9cb3fb57ccd76cabaf8"
+  },
+  "recall_fix_verification": {
+    "S0_benign_baseline_recall_before": 1.0,
+    "S0_benign_baseline_recall_after": null,
+    "S8_benign_cloud_cover_recall_before": 1.0,
+    "S8_benign_cloud_cover_recall_after": null,
+    "S1_fdi_bss_scaling_recall": 0.0
+  },
+  "phase1_hashes": {
+    "binary_xgboost": "f14e1c87d3640bcc8bec44d59925c2fd91b7c630a4cfe5e8b1a8d912e8a67e02",
+    "binary_random_forest": "6a66af5e955bc0a51413b96da549f78bbeefbadffcb19476da90da9263b172a4",
+    "binary_preprocessor_unscaled": "2c5ef4a896e75d237f4c59ca35cd3c3d6afd4b2abe23edf16bbc4e5f5d694b12",
+    "binary_preprocessor_scaled": "d80f1484077092c1ba64c9ceec793041e8b9cf037b4f9cd101b6d2b236608ac5",
+    "multiclass_xgboost": "2ec535dac31d9eafc31252fee3cc0335d8fd33bab47db527efa4e85a392459b9",
+    "multiclass_random_forest": "8987a92549af94330e33266c2eada17ee7ece6a037c43ad3e8925475d8f47501",
+    "multiclass_preprocessor_unscaled": "2c5ef4a896e75d237f4c59ca35cd3c3d6afd4b2abe23edf16bbc4e5f5d694b12",
+    "unseen_metrics_json": "72a343107bca8dc3b916447832a7dd24398ae862cea0572012cb71c57bff30fa"
+  }
+}

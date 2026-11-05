@@ -1,0 +1,79 @@
+{
+  "phase1_artifacts": {
+    "binary_xgb": {
+      "path": "phase_1/results/data4cyber_dataset/binary/models/XGBoost.joblib",
+      "hash": "f14e1c87d3640bcc8bec44d59925c2fd91b7c630a4cfe5e8b1a8d912e8a67e02",
+      "match": true
+    },
+    "binary_rf": {
+      "path": "phase_1/results/data4cyber_dataset/binary/models/Random_Forest.joblib",
+      "hash": "6a66af5e955bc0a51413b96da549f78bbeefbadffcb19476da90da9263b172a4",
+      "match": true
+    },
+    "binary_prep_unscaled": {
+      "path": "phase_1/results/data4cyber_dataset/binary/models/preprocessor_unscaled.joblib",
+      "hash": "2c5ef4a896e75d237f4c59ca35cd3c3d6afd4b2abe23edf16bbc4e5f5d694b12",
+      "match": true
+    },
+    "binary_prep_scaled": {
+      "path": "phase_1/results/data4cyber_dataset/binary/models/preprocessor_scaled.joblib",
+      "hash": "d80f1484077092c1ba64c9ceec793041e8b9cf037b4f9cd101b6d2b236608ac5",
+      "match": true
+    },
+    "multiclass_xgb": {
+      "path": "phase_1/results/data4cyber_dataset/multiclass/models/XGBoost_multiclass.joblib",
+      "hash": "2ec535dac31d9eafc31252fee3cc0335d8fd33bab47db527efa4e85a392459b9",
+      "match": true
+    },
+    "multiclass_rf": {
+      "path": "phase_1/results/data4cyber_dataset/multiclass/models/Random_Forest_multiclass.joblib",
+      "hash": "8987a92549af94330e33266c2eada17ee7ece6a037c43ad3e8925475d8f47501",
+      "match": true
+    },
+    "multiclass_prep_unscaled": {
+      "path": "phase_1/results/data4cyber_dataset/multiclass/models/preprocessor_unscaled.joblib",
+      "hash": "2c5ef4a896e75d237f4c59ca35cd3c3d6afd4b2abe23edf16bbc4e5f5d694b12",
+      "match": true
+    },
+    "unseen_metrics_json": {
+      "path": "phase_1/results/data4cyber_dataset/unseen_attack/unseen_attack_MitM_FDI.json",
+      "hash": "72a343107bca8dc3b916447832a7dd24398ae862cea0572012cb71c57bff30fa",
+      "match": true
+    }
+  },
+  "milestone4_baseline_outputs": {
+    "m4_telemetry_features": {
+      "path": "simulation/results/milestone4/telemetry_features.csv",
+      "hash": "2b887cdb9f8ade4542d98f05441ffe02ff564f3b4f870d71ddd825342c2e2c17",
+      "match": true
+    },
+    "m4_telemetry_metadata": {
+      "path": "simulation/results/milestone4/telemetry_metadata.csv",
+      "hash": "bf04427cd3d0705cc5274627b2f5eaa11561e33eaaca981e5d6c955f5e800cb9",
+      "match": true
+    },
+    "m4_predictions": {
+      "path": "simulation/results/milestone4/predictions_binary_and_multiclass.csv",
+      "hash": "eec818a78a68aa59b6f2b77a96021f710050ad52552688984c8c3dfcbc42692b",
+      "match": true
+    },
+    "m4_metrics_exp1": {
+      "path": "simulation/results/milestone4/metrics_experiment1_frozen_models.json",
+      "hash": "66f7d620571190f672b9a74f011495f86e7e7bb2ed0333e53a324adaf0d27ea7",
+      "match": true
+    }
+  },
+  "autoencoder_artifacts": {
+    "recovered_autoencoder_pt": {
+      "path": "phase_1/results/data4cyber_dataset/anomaly/recovery_v1/Autoencoder.pt",
+      "hash": "8df8b7333d93ff58d8d4dba44dc60cd09e0fc2558e7191a837942799fba4936c",
+      "match": true
+    },
+    "threshold_metadata_json": {
+      "path": "phase_1/results/data4cyber_dataset/anomaly/recovery_v1/threshold_metadata.json",
+      "hash": "fcce7d97de5b5c753b4e1da72cffaa928cbb16e9840df99410163252e1aa1c90",
+      "match": true
+    }
+  },
+  "all_verified": true
+}
